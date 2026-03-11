@@ -1,0 +1,61 @@
+import type { Metadata } from "next";
+import { Inter, Playfair_Display } from "next/font/google";
+import "./globals.css";
+import { siteConfig } from "@/lib/site-config";
+import { Schema } from "@/components/seo/Schema";
+
+import { Header } from "@/components/layout/Header";
+
+const inter = Inter({
+  variable: "--font-sans",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const playfair = Playfair_Display({
+  variable: "--font-serif",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+export const metadata: Metadata = {
+  title: {
+    default: siteConfig.name,
+    template: `%s | ${siteConfig.name}`,
+  },
+  description: siteConfig.description,
+  keywords: siteConfig.keywords,
+  openGraph: {
+    type: "website",
+    locale: "fi_FI",
+    url: siteConfig.url,
+    title: siteConfig.name,
+    description: siteConfig.description,
+    siteName: siteConfig.name,
+  },
+};
+
+import { DemoBadge } from "@/components/ui/DemoBadge";
+import { MobileCTA } from "@/components/ui/MobileCTA";
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="fi">
+      <body
+        className={`${inter.variable} ${playfair.variable} antialiased bg-stone-50 text-stone-900 font-sans overflow-x-hidden w-full`}
+      >
+        <Header />
+        <DemoBadge />
+        <Schema />
+        <main className="min-h-screen w-full overflow-x-hidden">
+          {children}
+        </main>
+        <MobileCTA />
+      </body>
+    </html>
+  );
+}
