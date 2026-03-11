@@ -37,7 +37,7 @@ export default function TarjousPage() {
                 {/* Background Image with Overlay */}
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="/images/tarjous-hero.png"
+                        src="/images/tarjous-hero.webp"
                         alt="Moderni työtila metsänäkymällä"
                         fill
                         className="object-cover"
@@ -263,7 +263,7 @@ export default function TarjousPage() {
                             <div className="absolute -inset-4 bg-gradient-to-tr from-blue-600/20 to-cyan-500/20 rounded-[2.5rem] blur-2xl opacity-0 group-hover/image:opacity-100 transition-opacity duration-700"></div>
                             <div className="relative aspect-square md:aspect-video lg:aspect-square rounded-[2.5rem] overflow-hidden shadow-2xl border-8 border-white">
                                 <Image
-                                    src="/images/tarjous-tilaa.png"
+                                    src="/images/tarjous-tilaa.webp"
                                     alt="Mökkilaituri ja tabletti"
                                     fill
                                     className="object-cover transition-transform duration-1000 group-hover/image:scale-105"

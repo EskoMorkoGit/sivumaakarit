@@ -51,7 +51,7 @@ export function SalesSection() {
                         {/* Google Visibility */}
                         <div className="group relative overflow-hidden rounded-[2.5rem] h-[400px] border border-white/5 hover:border-cyan-500/30 transition-all duration-700 hover:-translate-y-2 shadow-2xl">
                             <Image 
-                                src="/images/google-visibility-cottage.png" 
+                                src="/images/google-visibility-cottage.webp" 
                                 alt="Google Näkyvyys mökillä" 
                                 fill 
                                 className="object-cover transition-transform duration-1000 group-hover:scale-110 opacity-50 group-hover:opacity-70"
@@ -68,7 +68,7 @@ export function SalesSection() {
                         {/* Google Maps */}
                         <div className="group relative overflow-hidden rounded-[2.5rem] h-[400px] border border-white/5 hover:border-green-500/30 transition-all duration-700 hover:-translate-y-2 shadow-2xl">
                             <Image 
-                                src="/images/google-maps-countryside.png" 
+                                src="/images/google-maps-countryside.webp" 
                                 alt="Google Maps maaseudulla" 
                                 fill 
                                 className="object-cover transition-transform duration-1000 group-hover:scale-110 opacity-50 group-hover:opacity-70"
@@ -85,7 +85,7 @@ export function SalesSection() {
                         {/* ChatGPT Readiness */}
                         <div className="group relative overflow-hidden rounded-[2.5rem] h-[400px] border border-white/5 hover:border-purple-500/30 transition-all duration-700 hover:-translate-y-2 shadow-2xl">
                             <Image 
-                                src="/images/ai-readiness-person.png" 
+                                src="/images/ai-readiness-person.webp" 
                                 alt="Tekoälyvalmius" 
                                 fill 
                                 className="object-cover transition-transform duration-1000 group-hover:scale-110 opacity-50 group-hover:opacity-70"
