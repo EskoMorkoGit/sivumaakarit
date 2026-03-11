@@ -115,7 +115,7 @@ export function SalesSection() {
                             </div>
                             <h2 className="text-3xl md:text-5xl font-black tracking-tight uppercase italic text-white">
                                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-white to-cyan-400 animate-pulse block">
-                                        Me varmistamme, että yrityksesi on löydettävissä heti, kun apua tarvitaan.
+                                    Mutta asiakas... hän ei jaksa kahlata sivuja, jotka on rakennettu menneisyyden &quot;esite&quot;-tyylillä. Hän etsii nopeaa ratkaisua ongelmaansa.
                                     </span>
                             </h2>
                         </div>
@@ -197,7 +197,7 @@ export function SalesSection() {
                             </div>
                             <div>
                                 <p className="text-white text-xl md:text-2xl font-bold leading-relaxed mb-8 italic">
-                                    "Perinteiset kotisivut matelevat punaisella, meidän mallimme latautuu silmänräpäyksessä ja pysyy aina Googlen suosittelemalla erinomaisella tasolla."
+                                    &quot;Perinteiset kotisivut matelevat punaisella, meidän mallimme latautuu silmänräpäyksessä ja pysyy aina Googlen suosittelemalla erinomaisella tasolla.&quot;
                                 </p>
                                 <p className="text-slate-300 text-lg leading-relaxed mb-6">
                                     Toimitamme jokaisen sivuston mukana virallisen <span className="text-emerald-400 font-bold">Google Lighthouse -raportin*</span>, joka vahvistaa täydet 100/100 pisteet hakukoneoptimoinnista, esteettömyydestä ja parhaista käytännöistä. 
@@ -240,7 +240,7 @@ export function SalesSection() {
                                             <div className="w-16 h-1 bg-cyan-500 mb-6 hidden md:block"></div>
                                         </div>
                                         <p className="text-slate-300 mb-8 text-lg leading-relaxed">
-                                            Meiltä et saa pelkkää "tonttia" netistä, vaan kovan luokan myyntimoottorin.
+                                            Meiltä et saa pelkkää &quot;tonttia&quot; netistä, vaan kovan luokan myyntimoottorin.
                                         </p>
                                         <ul className="space-y-6">
                                             <li className="flex items-start text-slate-300">
@@ -336,7 +336,7 @@ export function SalesSection() {
                             </div>
                             <textarea aria-label="Viesti" name="message" rows={3} placeholder="Miten voin auttaa?" className="w-full min-w-0 bg-slate-900/50 border border-slate-800 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-cyan-500 outline-none"></textarea>
                             <button type="submit" className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 rounded-lg transition-colors">
-                                Lähetä yhteydenotto
+                                &quot;Entä se perinteinen toimisto?&quot;
                             </button>
                         </form>
                     </div>

@@ -81,7 +81,7 @@ export function PricingTiers() {
                                 {[
                                     <><strong className="text-white">Hoidamme kaiken julkaisuun ja ylläpitoon:</strong> Domain, web-hotelli ja täysin avaimet käteen -asennus nettiin. Sinun ei tarvitse tehdä mitään.</>,
                                     <><strong className="text-white">Tekninen sydän:</strong> SSL-salaus, tietoturva, automaattiset varmuuskopiot ja nopeusseuranta.</>,
-                                    <><strong className="text-white">1 pieni päivitys/kk:</strong> Uusi kuva tai tekstinmuutos esim. "Nyt kesätarjous:" (max 15min).</>,
+                                    <><strong className="text-white">1 pieni päivitys/kk:</strong> Uusi kuva tai tekstinmuutos esim. &quot;Nyt kesätarjous:&quot; (max 15min).</>,
                                     "Tukipyyntöjen vasteaika max kaksi arkipäivää (lisätyöt 75 €/h)."
                                 ].map((feature, idx) => (
                                     <li key={idx} className="flex gap-3 text-slate-300 text-sm items-start">

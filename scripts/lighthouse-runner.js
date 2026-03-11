@@ -1,3 +1,4 @@
+/* eslint-disable */
 const chromeLauncher = require('chrome-launcher');
 
 (async () => {

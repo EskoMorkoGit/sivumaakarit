@@ -1,24 +1,9 @@
 import Link from "next/link";
-import Image from "next/image";
 import { Playfair_Display, Inter } from "next/font/google";
 
 const playfair = Playfair_Display({ subsets: ["latin"] });
 const inter = Inter({ subsets: ["latin"] });
 
-const ScoreCircle = ({ label, score }: { label: string; score: number }) => (
-    <div className="flex flex-col items-center gap-2 w-24 sm:w-28">
-        <div className="relative w-16 h-16 md:w-20 md:h-20 shrink-0">
-            <svg className="w-full h-full transform -rotate-90" viewBox="0 0 36 36">
-                <circle cx="18" cy="18" r="15.915" fill="transparent" stroke="#e2e8f0" strokeWidth="3" />
-                <circle cx="18" cy="18" r="15.915" fill="transparent" stroke="#22c55e" strokeWidth="3" strokeDasharray={`${score}, 100`} />
-            </svg>
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-green-600 font-bold text-lg md:text-xl">
-                {score}
-            </div>
-        </div>
-        <span className="text-[10px] sm:text-[11px] md:text-xs font-bold text-slate-800 text-center uppercase tracking-wide w-full leading-tight hyphens-auto">{label}</span>
-    </div>
-);
 
 export function StandalonePricing() {
     return (
@@ -174,7 +159,7 @@ export function StandalonePricing() {
                             <span className="text-xl md:text-2xl text-slate-500 font-normal mt-2 block">(Sitä, mitä muut eivät pysty tarjoamaan)</span>
                         </h3>
                         <p className="text-lg md:text-xl text-slate-700 mb-12 leading-relaxed max-w-3xl mx-auto">
-                            Useimmat tekevät "nättejä" sivuja. Me teemme teknisesti täydellisiä myyntikoneita. Tähän hintaan et saa muualta tätä teknistä ylivertaisuutta:
+                            Useimmat tekevät &quot;nättejä&quot; sivuja. Me teemme teknisesti täydellisiä myyntikoneita. Tähän hintaan et saa muualta tätä teknistä ylivertaisuutta:
                         </p>
 
                         <ul className="grid sm:grid-cols-3 gap-8 text-left">

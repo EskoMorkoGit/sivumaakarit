@@ -1,7 +1,6 @@
 "use client";
 
 import { siteConfig } from "@/lib/site-config";
-import { useState } from "react";
 
 import Image from "next/image";
 

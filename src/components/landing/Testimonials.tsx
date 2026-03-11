@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
 
 const testimonials = [
@@ -169,7 +168,7 @@ export function Testimonials() {
                                     ))}
                                 </div>
                                 <p className="text-slate-600 text-lg md:text-xl italic mb-8 leading-relaxed font-light pointer-events-none">
-                                    "{item.text}"
+                                    &quot;Mutta miksi en tekisi itse?&quot;
                                 </p>
                             </div>
 

@@ -122,7 +122,7 @@ export default function TarjousPage() {
                 <h2 className={`${playfair.className} text-2xl font-bold mb-8`}>Tämä palvelu ei ole sinulle, jos...</h2>
                 <div className="bg-slate-100 p-8 rounded-r-2xl text-left border-l-4 border-[#ecc94b]">
                     <p className="text-lg text-slate-700 italic">
-                        "...etsit täysin räätälöityä ja kuukausia kestävää design-projektia."
+                        &quot;...etsit täysin räätälöityä ja kuukausia kestävää design-projektia.&quot;
                     </p>
                     <p className="mt-4 text-slate-600">
                         Jos tavoitteesi on täysin yksilöllinen erikoisratkaisu, tämä ei ole oikea valinta. Me tarjoamme suoran tien tuloksiin ilman hämmentävää ”digitaalista polkua”, joka karkottaa asiakkaat jo ensimetreillä.
@@ -139,7 +139,7 @@ export default function TarjousPage() {
                     <p className="text-xl md:text-2xl text-slate-300 mb-10 leading-relaxed font-light">
                         <strong className="text-white font-semibold">Olemme 100 % suomalainen yritys Lohjalta.</strong> Tavoitteenamme on auttaa paikallisia ja käytännönläheisiä yrittäjiä pärjäämään isoja tekijöitä vastaan.
                         <br /><br />
-                        <strong className="text-white font-semibold">Me emme puhu koodia</strong> (vaikka osaamme sitä lukea kuin sanomalehteä). Me puhumme liiketoimintaa. Me emme halua vain tehdä sinulle verkkosivua – me haluamme korjata yrityksesi digitaalisen "mökkitien", jotta asiakkaat löytävät perille asti ilman turhia mutkia.
+                        <strong className="text-white font-semibold">Me emme puhu koodia</strong> (vaikka osaamme sitä lukea kuin sanomalehteä). Me puhumme liiketoimintaa. Me emme halua vain tehdä sinulle verkkosivua – me haluamme korjata yrityksesi digitaalisen &quot;mökkitien&quot;, jotta asiakkaat löytävät perille asti ilman turhia mutkia.
                     </p>
                     <div className="bg-slate-800/50 p-8 md:p-12 rounded-3xl border border-slate-700/50 mb-12 shadow-2xl">
                         <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 break-words">
@@ -170,13 +170,13 @@ export default function TarjousPage() {
                             </h3>
                             <div className="text-slate-700 space-y-4 leading-relaxed">
                                 <p>
-                                    Kuvitellaanpa tilanne: On perjantai-ilta. Mökkiläisen pihalla on iso koivu, joka näyttää vaaralliselta ja uhkaa kaatua katon päälle syysmyrskyssä. Mitä hän tekee? Hän ei hae puhelinluetteloa. Hän kaivaa puhelimen taskusta ja kirjoittaa Googleen tai ChatGPT:hen: <em>"Puunkaato mökkitien varrelta nopeasti"</em>.
+                                    Kuvitellaanpa tilanne: On perjantai-ilta. Mökkiläisen pihalla on iso koivu, joka näyttää vaaralliselta ja uhkaa kaatua katon päälle syysmyrskyssä. Mitä hän tekee? Hän ei hae puhelinluetteloa. Hän kaivaa puhelimen taskusta ja kirjoittaa Googleen tai ChatGPT:hen: <em>&quot;Puunkaato mökkitien varrelta nopeasti&quot;</em>.
                                 </p>
                                 <p>
                                     Hakutuloksiin nousee useita yrityksiä. Ensimmäinen sivusto latautuu hitaasti pätkien. Toinen sivusto näyttää sekavalta, eikä puhelinnumeroa löydy ruudun rullailunkaan jälkeen.
                                 </p>
                                 <p>
-                                    <strong className="text-blue-900">Sitten hän klikkaa sinun sivuasi.</strong> Se aukeaa silmänräpäyksessä. Heti ensimmäisenä ruudulla lukee isolla: <em>"Ammattitaitoinen puunkaatopalvelu. Turvallisesti ja nopeasti."</em> Alla on selkeä vihreä nappi: <em>"Soita heti"</em>.
+                                    <strong className="text-blue-900">Sitten hän klikkaa sinun sivuasi.</strong> Se aukeaa silmänräpäyksessä. Heti ensimmäisenä ruudulla lukee isolla: <em>&quot;Ammattitaitoinen puunkaatopalvelu. Turvallisesti ja nopeasti.&quot;</em> Alla on selkeä vihreä nappi: <em>&quot;Soita heti&quot;</em>.
                                 </p>
                                 <p>
                                     Mökkiläinen painaa nappia, sinun puhelimesi soi ja keikka on sovittu. <strong>Siksi myyvä, nopea ja löydettävä nettisivu on yrityksesi tärkein työntekijä.</strong>
@@ -204,10 +204,10 @@ export default function TarjousPage() {
                                 </span>
                             </summary>
                             <div className="px-6 pb-6 text-slate-600 leading-relaxed border-t border-slate-100 mt-2 pt-4">
-                                <p>Monet toimistot laskuttavat tuhansia euroja, koska prosessi on hidas ja "keksitään pyörä uudelleen" jokaisen asiakkaan kohdalla. Me teemme asiat toisin.</p>
+                                <p>Monet toimistot laskuttavat tuhansia euroja, koska prosessi on hidas ja &quot;keksitään pyörä uudelleen&quot; jokaisen asiakkaan kohdalla. Me teemme asiat toisin.</p>
                                 <p className="mt-2 text-slate-900 font-medium">Käytämme tekoälyä asiantuntevasti apuna koodauksessa ja tekstintuotannossa.</p>
                                 <p className="mt-2 text-slate-600">
-                                    Tekoäly (AI) ei tee sivuja puolestamme, mutta se poistaa meiltä ohjelmoinnin ja oikoluvun "raskaan raatamisen". Tämän ansiosta voimme keskittyä siihen, mikä tuo sinulle rahaa: <strong>optimaalisen hakukonenäkyvyyden, huippunopeuden ja psykologisesti myyvän asettelun rakentamiseen.</strong> Siirrämme säästyneen ajan suoraan sinun lompakkoosi, ja siksi pystymme tarjoamaan markkinoiden parhaan teknisen laadun (100/100) näin järkevään hintaan.
+                                    Tekoäly (AI) ei tee sivuja puolestamme, mutta se poistaa meiltä ohjelmoinnin ja oikoluvun &quot;raskaan raatamisen&quot;. Tämän ansiosta voimme keskittyä siihen, mikä tuo sinulle rahaa: <strong>optimaalisen hakukonenäkyvyyden, huippunopeuden ja psykologisesti myyvän asettelun rakentamiseen.</strong> Siirrämme säästyneen ajan suoraan sinun lompakkoosi, ja siksi pystymme tarjoamaan markkinoiden parhaan teknisen laadun (100/100) näin järkevään hintaan.
                                 </p>
                             </div>
                         </details>
@@ -222,7 +222,7 @@ export default function TarjousPage() {
                             </summary>
                             <div className="px-6 pb-6 text-slate-600 leading-relaxed border-t border-slate-100 mt-2 pt-4">
                                 <p>Mieti sivustoasi firman autona. 990 € kertamaksu on se, jolla ostat uuden, kiiltävän auton autoliikkeestä. Mutta jos et koskaan vaihda öljyjä, katso rengaspaineita tai pese sitä, se menettää arvonsa nopeasti.</p>
-                                <p className="mt-2 text-slate-600">150 €/kk on VIP-huoltosopimus: me pesemme auton, katsomme moottoriin ja huolehdimme jopa siitä, että oikeat asiakkaat nousevat kyytiin. Se on sijoitus siihen, että olemassa oleva sivusi ei vain "ole", vaan tuo jatkuvasti uutta kauppaa.</p>
+                                <p className="mt-2 text-slate-600">150 €/kk on VIP-huoltosopimus: me pesemme auton, katsomme moottoriin ja huolehdimme jopa siitä, että oikeat asiakkaat nousevat kyytiin. Se on sijoitus siihen, että olemassa oleva sivusi ei vain &quot;ole&quot;, vaan tuo jatkuvasti uutta kauppaa.</p>
                             </div>
                         </details>
 
@@ -248,7 +248,7 @@ export default function TarjousPage() {
                                 </span>
                             </summary>
                             <div className="px-6 pb-6 text-slate-600 leading-relaxed border-t border-slate-100 mt-2 pt-4">
-                                Kyllä voit. Meillä ei ole pitkiä pakollisia "lukkovuosia". Voit lopettaa jatkuvan tilauksen kalenterikuukauden irtisanomisajalla. Jos olet maksanut sivuston rakennuksesta erillisen aloitusmaksun / kertamaksun, sivusto koodineen on täysin sinun omaisuuttasi jatkossakin.
+                                Kyllä voit. Meillä ei ole pitkiä pakollisia &quot;lukkovuosia&quot;. Voit lopettaa jatkuvan tilauksen kalenterikuukauden irtisanomisajalla. Jos olet maksanut sivuston rakennuksesta erillisen aloitusmaksun / kertamaksun, sivusto koodineen on täysin sinun omaisuuttasi jatkossakin.
                             </div>
                         </details>
                     </div>
