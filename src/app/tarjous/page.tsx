@@ -23,11 +23,11 @@ export default function TarjousPage() {
         <div className={`${inter.className} bg-slate-50 text-slate-900 leading-relaxed min-h-screen`}>
 
             {/* Custom Header for this Landing Page */}
-            <header className="py-4 md:py-6 px-4 md:px-12 flex justify-between items-center bg-white shadow-sm sticky top-0 z-50">
-                <div className={`text-lg md:text-2xl font-bold text-blue-900 ${playfair.className} tracking-tight leading-tight min-w-0 pr-2 break-words`}>
-                    <span className="whitespace-nowrap">Sivumaakareiden</span> <span className="text-blue-600 block sm:inline whitespace-nowrap">Palvelusivut</span>
+            <header className="py-4 md:py-8 px-4 md:px-16 flex justify-between items-center bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
+                <div className={`text-xl md:text-3xl font-bold text-slate-900 ${playfair.className} tracking-tighter leading-none`}>
+                    Sivumaakareiden <span className="text-blue-600">Palvelusivut</span>
                 </div>
-                <Link href="#hinnasto" className="flex-shrink-0 bg-blue-700 hover:bg-blue-800 text-white px-4 md:px-6 py-3 rounded-full font-bold transition text-sm md:text-base whitespace-nowrap shadow-md">
+                <Link href="#hinnasto" className="bg-blue-700 hover:bg-blue-800 text-white px-6 md:px-10 py-3.5 rounded-full font-bold transition-all text-sm md:text-lg shadow-lg hover:shadow-blue-500/25 active:scale-95">
                     Osta nyt 990 €
                 </Link>
             </header>
@@ -48,25 +48,24 @@ export default function TarjousPage() {
                     <div className="absolute inset-0 bg-slate-950/70 backdrop-blur-sm"></div>
                 </div>
 
-                <div className="max-w-5xl mx-auto relative z-10 text-center">
-                    <div className="inline-block px-4 py-1.5 mb-6 rounded-full bg-blue-500/20 border border-blue-400/30 backdrop-blur-md text-blue-300 text-sm font-bold tracking-[0.2em] uppercase">
+                <div className="max-w-6xl mx-auto relative z-10 text-center">
+                    <div className="inline-block px-6 py-2 mb-8 rounded-full bg-blue-500/10 border border-blue-400/20 backdrop-blur-md text-blue-400 text-sm font-bold tracking-[0.3em] uppercase">
                         Premium Palvelusivut
                     </div>
-                    <h1 className={`${playfair.className} text-4xl md:text-7xl font-bold mb-8 leading-[1.1] tracking-tight drop-shadow-2xl break-words hyphens-auto`}>
-                        Uskottava palvelusivu yrittäjälle –<br className="hidden md:block" /> 
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-white to-cyan-300">Valmiina 7 päivässä</span>
+                    <h1 className={`${playfair.className} text-5xl md:text-8xl font-bold mb-10 leading-[0.95] tracking-tighter`}>
+                        Uskottava palvelusivu yrittäjälle – 
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-white to-cyan-300 block mt-2">Valmiina 7 päivässä</span>
                     </h1>
-                    <p className={`${inter.className} text-lg md:text-2xl text-slate-200 mb-12 max-w-3xl mx-auto font-light leading-relaxed opacity-90`}>
-                        Lopeta tekninen säätö. Me rakennamme sinulle sivut, joilla asiakkaat löytävät sinut Googlesta ja tekoälyhauista.
+                    <p className={`${inter.className} text-xl md:text-3xl text-slate-200 mb-14 max-w-4xl mx-auto font-light leading-relaxed opacity-80`}>
+                        Lopeta tekninen säätö. Rakennamme sinulle sivut, joilla <br className="hidden md:block" /> asiakkaat löytävät sinut sieltä, missä he jo ovat.
                     </p>
-                    <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
-                        <Link href="#hinnasto" className={`${playfair.className} bg-yellow-400 hover:bg-yellow-500 text-slate-950 px-10 py-5 rounded-2xl font-bold text-xl shadow-[0_20px_40px_rgba(234,179,8,0.3)] transition-all transform hover:-translate-y-1 active:scale-95 uppercase tracking-wide`}>
+                    <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+                        <Link href="#hinnasto" className={`${playfair.className} bg-yellow-400 hover:bg-yellow-500 text-slate-950 px-12 py-6 rounded-2xl font-bold text-2xl shadow-2xl transition-all transform hover:-translate-y-1 active:scale-95 uppercase tracking-tight`}>
                             Tilaa vaivattomat palvelusivut
                         </Link>
-                        <Link href="/mokkipalvelu" className="text-slate-300 hover:text-white font-medium text-base py-3 px-6 rounded-xl border border-white/20 hover:bg-white/10 transition-all flex items-center justify-center gap-2 backdrop-blur-sm sm:w-auto w-full max-w-[280px]">
-                            <svg className="w-5 h-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
-                            <span className="md:inline hidden">Katso esimerkkisivua</span>
-                            <span className="inline md:hidden">Esimerkkisivu</span>
+                        <Link href="/mokkipalvelu" className="text-white hover:text-yellow-400 font-bold text-lg py-4 px-8 rounded-xl border-2 border-white/20 hover:border-yellow-400/50 transition-all flex items-center justify-center gap-3 backdrop-blur-sm group">
+                            <svg className="w-6 h-6 transform group-hover:scale-110 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
+                            Katso esimerkkisivua
                         </Link>
                     </div>
                 </div>
