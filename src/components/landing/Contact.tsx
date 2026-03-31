@@ -50,8 +50,8 @@ export function Contact() {
                                     Varoitus
                                 </div>
                                 
-                                <h2 className={`${playfair.className} text-[10vw] sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-8 tracking-tighter leading-none mt-6 break-words hyphens-auto uppercase italic`}>
-                                    STOP! <br /> OLET <br className="sm:hidden" /> KUMMITUS&shy;SIVUILLA <br className="hidden sm:block" />
+                                <h2 className={`${playfair.className} text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-8 tracking-tighter leading-none mt-6 uppercase italic`}>
+                                    STOP! <br /> OLET <br className="sm:hidden" /> KUMMITUSSIVUILLA <br className="hidden sm:block" />
                                     <span className={`${inter.className} text-xl md:text-3xl font-light block mt-6 opacity-90 normal-case not-italic`}>
                                         – tätä yritystä, <span className="underline decoration-4 decoration-black/20 text-black/80 font-bold">{siteConfig.name}</span>, ei ole olemassa. 👻
                                     </span>

@@ -39,11 +39,11 @@ export function SalesSection() {
                                 />
                             </div>
                         </div>
-                        <h2 className={`${playfair.className} text-3xl md:text-5xl lg:text-6xl font-bold mb-8 text-white break-words tracking-tight leading-tight italic`}>
+                        <h2 className={`${playfair.className} text-3xl md:text-5xl lg:text-6xl font-bold mb-8 text-white tracking-tight leading-tight italic`}>
                             Karut faktat: Jos yritystäsi ei löydy heti haun alusta, 
                             <span className="text-red-400 block sm:inline font-bold italic mt-2 md:mt-0 md:ml-2">kaupat menevät ohi.</span>
                         </h2>
-                        <p className={`${inter.className} text-slate-200 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto break-words font-light`}>
+                        <p className={`${inter.className} text-slate-200 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto font-light`}>
                             Nykypäivän ostopolku on armoton. Jos asiakas ei löydä yritystäsi Googlesta, Mapsista tai tekoälysovelluksista (kuten ChatGPT), hän valitsee kilpailijasi. Jopa 66,7 %<sup>*</sup> varauksista tehdään suoraan yrityksen omilla sivuilla – <span className="text-white font-semibold">varmista, että oma tiesi on kunnossa.</span>
                         </p>
                         <p className={`${inter.className} text-slate-400 text-xs mt-4 max-w-2xl mx-auto italic opacity-90`}>
@@ -118,7 +118,7 @@ export function SalesSection() {
                                     className="h-16 md:h-20 w-auto object-contain mx-auto opacity-80"
                                 />
                             </div>
-                            <h2 className={`${playfair.className} text-4xl md:text-6xl font-bold tracking-tight text-white leading-tight italic`}>
+                            <h2 className={`${playfair.className} text-2xl md:text-6xl font-bold tracking-tight text-white leading-tight italic`}>
                                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-white to-cyan-300 block">
                                     Teemme sivuistasi huippuunsa viritetyn myyntikoneen.
                                     </span>

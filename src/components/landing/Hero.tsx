@@ -23,7 +23,7 @@ export function Hero() {
             </div>
 
             <div className="relative z-10 container mx-auto px-4 text-center">
-                <h1 className={`${urbanist.className} text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-8 tracking-tight drop-shadow-2xl leading-tight mt-16 md:mt-0 break-words hyphens-auto`}>
+                <h1 className={`${urbanist.className} text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-8 tracking-tight drop-shadow-2xl leading-tight mt-16 md:mt-0`}>
                     Mielenrauhaa <br className="hidden md:block" /> mökkilomalle
                 </h1>
                 <p className={`${manrope.className} text-base md:text-2xl text-stone-100 mb-12 max-w-2xl mx-auto drop-shadow-md font-light tracking-wide opacity-90`}>
