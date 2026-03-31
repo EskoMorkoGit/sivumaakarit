@@ -1,15 +1,19 @@
 import { siteConfig } from "@/lib/site-config";
 import Image from "next/image";
+import { Urbanist, Manrope } from "next/font/google";
+
+const urbanist = Urbanist({ subsets: ["latin"], weight: ["700"] });
+const manrope = Manrope({ subsets: ["latin"], weight: ["400", "500", "700"] });
 
 export function Services() {
     return (
         <section className="py-24 bg-stone-50" id="services">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-5xl font-bold text-stone-900 mb-6">
+                    <h2 className={`${urbanist.className} text-4xl md:text-6xl font-bold text-stone-900 mb-6 tracking-tight`}>
                         Palvelumme
                     </h2>
-                    <p className="text-xl text-stone-600 max-w-2xl mx-auto">
+                    <p className={`${manrope.className} text-xl text-stone-600 max-w-2xl mx-auto font-light`}>
                         Kattavat huolto- ja valvontapalvelut mökillesi ympäri vuoden.
                     </p>
                 </div>
@@ -27,14 +31,14 @@ export function Services() {
                                 />
                             </div>
                             <div className="p-8">
-                                <h3 className="text-2xl font-bold mb-3 text-green-900">{service.title}</h3>
-                                <p className="text-stone-600 leading-relaxed mb-6">
+                                <h3 className={`${urbanist.className} text-2xl font-bold mb-3 text-green-900`}>{service.title}</h3>
+                                <p className={`${manrope.className} text-stone-600 leading-relaxed mb-6`}>
                                     {service.desc}
                                 </p>
                                 {service.price && (
                                     <div className="border-t border-stone-100 pt-4">
-                                        <p className="text-lg font-semibold text-stone-800">
-                                            Hinta: <span className="text-green-700">{service.price}</span>
+                                        <p className={`${manrope.className} text-lg font-semibold text-stone-800`}>
+                                            Hinta: <span className="text-green-700 font-bold">{service.price}</span>
                                         </p>
                                     </div>
                                 )}

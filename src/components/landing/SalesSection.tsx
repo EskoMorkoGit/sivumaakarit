@@ -1,6 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
 import { siteConfig } from "@/lib/site-config";
+import { Playfair_Display, Inter } from "next/font/google";
+
+const playfair = Playfair_Display({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 export function SalesSection() {
     return (
@@ -22,7 +26,7 @@ export function SalesSection() {
 
 
                         <div className="mb-16 animate-in fade-in zoom-in duration-1000 delay-300">
-                            <h3 className="text-blue-500 font-extrabold tracking-[0.3em] mb-8 uppercase text-lg md:text-2xl font-sans">
+                            <h3 className={`${playfair.className} text-blue-500 font-bold tracking-[0.2em] mb-8 uppercase text-lg md:text-xl italic`}>
                                 Sivumaakarit - laadukkaat ja nopeat nettisivut
                             </h3>            
                             <div className="relative inline-block animate-swing origin-top">
@@ -35,13 +39,14 @@ export function SalesSection() {
                                 />
                             </div>
                         </div>
-                        <h2 className="text-3xl md:text-5xl font-bold mb-8 text-white break-words">
-                            Karut faktat: Jos yritystäsi ei löydy heti haun alusta, <span className="text-red-400 block sm:inline">kaupat menevät ohi.</span>
+                        <h2 className={`${playfair.className} text-3xl md:text-5xl lg:text-6xl font-bold mb-8 text-white break-words tracking-tight leading-tight italic`}>
+                            Karut faktat: Jos yritystäsi ei löydy heti haun alusta, 
+                            <span className="text-red-400 block sm:inline font-bold italic mt-2 md:mt-0 md:ml-2">kaupat menevät ohi.</span>
                         </h2>
-                        <p className="text-slate-200 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto break-words">
+                        <p className={`${inter.className} text-slate-200 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto break-words font-light`}>
                             Nykypäivän ostopolku on armoton. Jos asiakas ei löydä yritystäsi Googlesta, Mapsista tai tekoälysovelluksista (kuten ChatGPT), hän valitsee kilpailijasi. Jopa 66,7 %<sup>*</sup> varauksista tehdään suoraan yrityksen omilla sivuilla – <span className="text-white font-semibold">varmista, että oma tiesi on kunnossa.</span>
                         </p>
-                        <p className="text-slate-400 text-xs mt-4 max-w-2xl mx-auto italic opacity-90">
+                        <p className={`${inter.className} text-slate-400 text-xs mt-4 max-w-2xl mx-auto italic opacity-90`}>
                             * Lähde: TrekkSoft Travel Trend Report 2019.
                         </p>
                     </div>
@@ -60,8 +65,8 @@ export function SalesSection() {
                                 <div className="p-3 bg-blue-500/20 rounded-xl w-fit mb-4 text-blue-400 backdrop-blur-md border border-blue-500/20">
                                     <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" /></svg>
                                 </div>
-                                <h3 className="text-2xl font-black text-white mb-3 tracking-tight">Google-näkyvyys</h3>
-                                <p className="text-slate-200 text-lg leading-snug font-medium">Löydy sieltä, mistä asiakkaat etsivät apua – vaikka laiturin nokasta puhelimella.</p>
+                                <h3 className={`${playfair.className} text-2xl font-bold text-white mb-3 tracking-tight italic`}>Google-näkyvyys</h3>
+                                <p className={`${inter.className} text-slate-200 text-lg leading-snug font-light`}>Löydy sieltä, mistä asiakkaat etsivät apua – vaikka laiturin nokasta puhelimella.</p>
                             </div>
                         </div>
 
@@ -94,8 +99,8 @@ export function SalesSection() {
                                 <div className="p-3 bg-purple-500/20 rounded-xl w-fit mb-4 text-purple-400 backdrop-blur-md border border-purple-500/20">
                                     <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24.0908a6.0562 6.0562 0 0 0 5.7718-4.2058 6.034 6.034 0 0 0-.7477-7.0915l-.005-.005Zm-2.6107 10.742h-3.4682a2.0003 2.0003 0 0 1-1.314-.4924l-3.3218-2.6366 1.836-3.176L16.29 16.736v3.827ZM2.5029 18.232l1.9-3.292 3.3218 2.6366a2.0051 2.0051 0 0 1 .4969 1.2588v4.2378l-3.9877-2.3a4.103 4.103 0 0 1-1.731-2.5412Zm-1.841-8.6186A4.1 4.1 0 0 1 1.7303 7.072l3.9926-2.305v4.2427a2.0051 2.0051 0 0 1-.497 1.2588L1.9126 12.9056 6.619 9.6136ZM16.3263 7.3323 13.0045 4.6957a2.0053 2.0053 0 0 1-1.314-.4924H8.2223v-3.827l3.889.3787a4.1031 4.1031 0 0 1 2.454 1.7371l1.761 4.836ZM19.6738 8.928a2.0051 2.0051 0 0 1 .4969 1.2588v4.2378l-3.9877 2.3-3.3218-2.6366 1.9-3.292 4.9126 3.292-1.761-4.836a4.103 4.103 0 0 1 1.761 1.832ZM10.5 14.168V9.832a2.0051 2.0051 0 0 1 .4969-1.2588l3.3218-2.6366 1.9 3.292-3.3218 2.6366a2.0051 2.0051 0 0 1-1.314.4924H8.083l1.9-3.292 3.3218 2.6366c.2045.161.4678.2378.7282.2132Z" /></svg>
                                 </div>
-                                <h3 className="text-2xl font-black text-white mb-3 tracking-tight">ChatGPT-valmius</h3>
-                                <p className="text-slate-200 text-lg leading-snug font-medium">Uusi sukupolvi hakee tietoa toisin. Ole se yritys, jota tekoäly suosittelee vastauksissaan.</p>
+                                <h3 className={`${playfair.className} text-2xl font-bold text-white mb-3 tracking-tight italic`}>ChatGPT-valmius</h3>
+                                <p className={`${inter.className} text-slate-200 text-lg leading-snug font-light`}>Uusi sukupolvi hakee tietoa toisin. Ole se yritys, jota tekoäly suosittelee vastauksissaan.</p>
                             </div>
                         </div>
                     </div>
@@ -113,9 +118,9 @@ export function SalesSection() {
                                     className="h-16 md:h-20 w-auto object-contain mx-auto opacity-80"
                                 />
                             </div>
-                            <h2 className="text-3xl md:text-5xl font-black tracking-tight uppercase italic text-white">
-                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-white to-cyan-400 animate-pulse block">
-                                    Mutta asiakas... hän ei jaksa kahlata sivuja, jotka on rakennettu menneisyyden &quot;esite&quot;-tyylillä. Hän etsii nopeaa ratkaisua ongelmaansa.
+                            <h2 className={`${playfair.className} text-4xl md:text-6xl font-bold tracking-tight text-white leading-tight italic`}>
+                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-white to-cyan-300 block">
+                                    Teemme sivuistasi huippuunsa viritetyn myyntikoneen.
                                     </span>
                             </h2>
                         </div>
@@ -127,11 +132,11 @@ export function SalesSection() {
                         <div className="group relative p-1 rounded-2xl transition-all duration-500 hover:scale-105 shadow-[0_0_15px_rgba(34,211,238,0.1)] hover:shadow-[0_0_40px_rgba(34,211,238,0.3)]">
                             <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 rounded-2xl animate-shimmer opacity-30 group-hover:opacity-100 transition-opacity duration-500" style={{ padding: '1px', backgroundSize: '200% 200%' }}></div>
                             <div className="relative bg-slate-950 p-8 rounded-2xl h-full flex flex-col items-center">
-                                <div className="w-20 h-20 rounded-full border-4 border-cyan-400 flex items-center justify-center text-cyan-400 font-black text-3xl mb-6 shadow-[0_0_20px_rgba(34,211,238,0.6)] animate-glitter bg-cyan-400/5">
+                                <div className={`${playfair.className} w-20 h-20 rounded-full border-4 border-cyan-400 flex items-center justify-center text-cyan-400 font-bold text-3xl mb-6 shadow-[0_0_20px_rgba(34,211,238,0.6)] bg-cyan-400/5`}>
                                     100
                                 </div>
-                                <h3 className="text-xl font-bold text-white mb-4 text-center">Hakukoneoptimointi (SEO)</h3>
-                                <p className="text-slate-300 text-sm md:text-base text-center leading-relaxed">
+                                <h3 className={`${playfair.className} text-xl font-bold text-white mb-4 text-center italic`}>Hakukoneoptimointi (SEO)</h3>
+                                <p className={`${inter.className} text-slate-300 text-sm md:text-base text-center leading-relaxed font-light`}>
                                     100/100. Varmistamme, että yrityksesi löytyy sieltä, missä asiakkaat etsivät apua – nyt ja tulevaisuuden tekoälyhauissa.
                                 </p>
                             </div>
@@ -193,16 +198,16 @@ export function SalesSection() {
                                         </div>
                                     </div>
                                 </div>
-                                <h3 className="text-3xl md:text-4xl font-black text-white mb-6 text-center lg:text-left">Nopeus ja löydettävyys ovat myyntivalttisi</h3>
+                                <h3 className={`${playfair.className} text-3xl md:text-5xl font-bold text-white mb-6 text-center lg:text-left leading-tight tracking-tight italic`}>Nopeus ja löydettävyys ovat myyntivalttisi</h3>
                             </div>
                             <div>
-                                <p className="text-white text-xl md:text-2xl font-bold leading-relaxed mb-8 italic">
-                                    &quot;Perinteiset kotisivut matelevat punaisella, meidän mallimme latautuu silmänräpäyksessä ja pysyy aina Googlen suosittelemalla erinomaisella tasolla.&quot;
+                                <p className={`${inter.className} text-white text-xl md:text-2xl font-bold leading-relaxed mb-8 italic opacity-90`}>
+                                    &quot;Perinteiset kotisivut matelevat punaisella, meidän mallimus latautuu silmänräpäyksessä ja pysyy aina Googlen suosittelemalla erinomaisella tasolla.&quot;
                                 </p>
-                                <p className="text-slate-300 text-lg leading-relaxed mb-6">
+                                <p className={`${inter.className} text-slate-300 text-lg leading-relaxed mb-6 font-light`}>
                                     Toimitamme jokaisen sivuston mukana virallisen <span className="text-emerald-400 font-bold">Google Lighthouse -raportin*</span>, joka vahvistaa täydet 100/100 pisteet hakukoneoptimoinnista, esteettömyydestä ja parhaista käytännöistä. 
                                 </p>
-                                <p className="text-slate-300 text-sm leading-relaxed">
+                                <p className={`${inter.className} text-slate-300 text-sm leading-relaxed opacity-80`}>
                                     Sivu, joka latautuu heti ja on selkeä käyttää, muuttaa kävijät maksaviksi asiakkaiksi. Älä anna hitaan tekniikan karkottaa asiakkaitasi kuoppaiselle hiekkattielle.
                                 </p>
                                 <p className="text-slate-400 text-[10px] mt-8 uppercase tracking-widest">
@@ -236,7 +241,7 @@ export function SalesSection() {
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-10">
                                     <div className="md:pr-8">
                                         <div className="text-center md:text-left mb-8">
-                                            <h4 className="text-2xl md:text-3xl font-black text-white mb-4 tracking-tight uppercase">Mitä saat tällä hinnalla?</h4>
+                                            <h4 className={`${playfair.className} text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight italic`}>Mitä saat tällä hinnalla?</h4>
                                             <div className="w-16 h-1 bg-cyan-500 mb-6 hidden md:block"></div>
                                         </div>
                                         <p className="text-slate-300 mb-8 text-lg leading-relaxed">

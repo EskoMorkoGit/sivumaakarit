@@ -1,6 +1,10 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
+import { Urbanist, Manrope } from "next/font/google";
+
+const urbanist = Urbanist({ subsets: ["latin"], weight: ["700"] });
+const manrope = Manrope({ subsets: ["latin"], weight: ["300", "400", "700"] });
 
 const testimonials = [
     {
@@ -117,10 +121,10 @@ export function Testimonials() {
     return (
         <section className="py-24 bg-stone-50 overflow-hidden relative" id="testimonials">
             <div className="container mx-auto px-4 mb-16 relative z-20">
-                <h2 className="text-3xl md:text-5xl font-black text-center text-slate-900 break-words tracking-tight">
+                <h2 className={`${urbanist.className} text-4xl md:text-6xl font-bold text-center text-slate-900 break-words tracking-tight`}>
                     Mitä asiakkaamme sanovat
                 </h2>
-                <div className="w-20 h-1.5 bg-green-700 mx-auto mt-6 rounded-full"></div>
+                <div className="w-20 h-1.5 bg-green-700 mx-auto mt-8 rounded-full"></div>
             </div>
 
             <div className="relative max-w-[1400px] mx-auto">
@@ -167,16 +171,16 @@ export function Testimonials() {
                                         </svg>
                                     ))}
                                 </div>
-                                <p className="text-slate-600 text-lg md:text-xl italic mb-8 leading-relaxed font-light pointer-events-none">
-                                    &quot;Mutta miksi en tekisi itse?&quot;
+                                <p className={`${manrope.className} text-slate-600 text-lg md:text-xl italic mb-8 leading-relaxed font-light pointer-events-none`}>
+                                    &quot;{item.text}&quot;
                                 </p>
                             </div>
 
                             <div className="flex items-center gap-4 mt-auto pt-5 border-t border-stone-100 pointer-events-none">
-                                <div className={`w-12 h-12 rounded-full flex items-center justify-center font-black text-sm ${item.color} shadow-inner`}>
+                                <div className={`${manrope.className} w-12 h-12 rounded-full flex items-center justify-center font-bold text-sm ${item.color} shadow-inner`}>
                                     {item.initials}
                                 </div>
-                                <span className="font-bold text-slate-800 text-lg">{item.author}</span>
+                                <span className={`${manrope.className} font-bold text-slate-800 text-lg`}>{item.author}</span>
                             </div>
                         </div>
                     ))}

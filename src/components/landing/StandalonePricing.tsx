@@ -52,6 +52,13 @@ export function StandalonePricing() {
 
                             </div>
                             
+                            <div className="mt-2 mb-6 w-full flex justify-center lg:justify-start">
+                                <Link href="/mokkipalvelu" className="group flex items-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white px-6 py-4 rounded-xl font-bold transition-all shadow-lg shadow-emerald-600/20 hover:shadow-xl hover:shadow-emerald-500/30 hover:-translate-y-0.5 w-full sm:w-auto justify-center">
+                                    <svg className="w-5 h-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+                                    Katso esimerkkisivua
+                                </Link>
+                            </div>
+
                             <p className="text-slate-400 text-xs italic mt-4">
                                 * Varmistus riippumattomalla Google PageSpeed Insights -työkalulla.
                             </p>
@@ -227,7 +234,7 @@ export function StandalonePricing() {
                                     </td>
                                     <td className="block md:table-cell p-4 md:p-5 text-green-700 font-medium bg-green-50/30 md:bg-transparent">
                                         <span className="md:hidden text-xs font-bold text-green-800 uppercase tracking-wider block mb-1">Milloin sivu on maksettu?</span>
-                                        <div className="mb-1">3–4 uutta asiakasta.</div>
+                                        <div className="mb-1 italic">3–4 uutta asiakasta.</div>
                                         <div className="text-sm text-green-600 font-normal mt-1">Tämän jälkeen kaikki on puhdasta voittoa.</div>
                                     </td>
                                 </tr>

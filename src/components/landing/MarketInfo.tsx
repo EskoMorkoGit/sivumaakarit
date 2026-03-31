@@ -1,4 +1,8 @@
 import Image from "next/image";
+import { Urbanist, Manrope } from "next/font/google";
+
+const urbanist = Urbanist({ subsets: ["latin"], weight: ["700"] });
+const manrope = Manrope({ subsets: ["latin"], weight: ["300", "400", "700"] });
 
 export function MarketInfo() {
     return (
@@ -9,8 +13,8 @@ export function MarketInfo() {
                         <h2 className="text-3xl font-bold mb-6">Miksi valita ammattilainen?</h2>
                         <div className="space-y-6">
                             <div className="bg-green-800/50 p-6 rounded-xl border border-green-700 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-                                <h3 className="text-xl font-semibold mb-2 text-stone-100">Tiesitkö?</h3>
-                                <p className="text-green-100 italic">
+                                <h3 className={`${urbanist.className} text-xl font-semibold mb-2 text-stone-100`}>Tiesitkö?</h3>
+                                <p className={`${manrope.className} text-green-100 italic`}>
                                     &quot;Säännöllinen ja ammattitaitoinen ylläpito on paras vakuutus mökkisi arvon säilymiselle. Huollettu loma-asunto takaa, että voit keskittyä olennaiseen – nauttimaan lomastasi ilman huolta tekniikasta, lumitöistä tai pihatöistä.&quot;
                                 </p>
                             </div>
@@ -20,8 +24,8 @@ export function MarketInfo() {
                                     %
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-semibold mb-1 text-stone-100">Kotitalousvähennys</h3>
-                                    <p className="text-green-100">
+                                    <h3 className={`${urbanist.className} text-xl font-semibold mb-1 text-stone-100`}>Kotitalousvähennys</h3>
+                                    <p className={`${manrope.className} text-green-100`}>
                                         Muistathan, että kaikki tarjoamamme huolto- ja hoitotyöt ovat kotitalousvähennyskelpoisia verotuksessa.
                                     </p>
                                 </div>

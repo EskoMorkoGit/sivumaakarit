@@ -1,3 +1,8 @@
+import { Urbanist, Manrope } from "next/font/google";
+
+const urbanist = Urbanist({ subsets: ["latin"], weight: ["700"] });
+const manrope = Manrope({ subsets: ["latin"], weight: ["400", "700"] });
+
 export function Pricing() {
     const prices = [
         {
@@ -20,25 +25,25 @@ export function Pricing() {
     return (
         <section className="py-24 bg-stone-50" id="pricing">
             <div className="container mx-auto px-4 max-w-5xl">
-                <h2 className="text-3xl md:text-5xl font-bold mb-16 text-stone-900 font-serif">
+                <h2 className={`${urbanist.className} text-4xl md:text-5xl font-bold mb-16 text-stone-900 tracking-tight`}>
                     Hinnasto
                 </h2>
 
                 <div className="grid md:grid-cols-2 gap-12 md:gap-24">
                     {prices.map((group, idx) => (
                         <div key={idx} className="space-y-8">
-                            <h3 className="text-xl font-bold text-stone-800 border-b border-stone-200 pb-2 mb-6">
+                            <h3 className={`${urbanist.className} text-2xl font-bold text-stone-800 border-b border-stone-200 pb-2 mb-6`}>
                                 {group.category}
                             </h3>
                             <div className="space-y-8">
                                 {group.items.map((item, itemIdx) => (
                                     <div key={itemIdx} className="flex flex-col gap-1">
                                         <div className="flex justify-between items-baseline w-full">
-                                            <span className="font-bold text-lg text-stone-900">{item.name}</span>
-                                            <span className="font-bold text-lg text-stone-900 shrink-0 ml-4">{item.price}</span>
+                                            <span className={`${manrope.className} font-bold text-lg text-stone-900`}>{item.name}</span>
+                                            <span className={`${urbanist.className} font-bold text-xl text-green-800 shrink-0 ml-4`}>{item.price}</span>
                                         </div>
                                         {item.desc && (
-                                            <p className="text-stone-600 text-sm leading-relaxed max-w-[90%]">
+                                            <p className={`${manrope.className} text-stone-600 text-sm leading-relaxed max-w-[90%] opacity-80`}>
                                                 {item.desc}
                                             </p>
                                         )}

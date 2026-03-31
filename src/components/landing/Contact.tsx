@@ -1,8 +1,9 @@
-"use client";
-
 import { siteConfig } from "@/lib/site-config";
-
 import Image from "next/image";
+import { Playfair_Display, Inter } from "next/font/google";
+
+const playfair = Playfair_Display({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 export function Contact() {
     return (
@@ -14,7 +15,7 @@ export function Contact() {
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-blue-600/30 blur-[100px] rounded-full opacity-60 z-0"></div>
                     
                     <div className="animate-bounce flex flex-col items-center gap-3 relative z-10">
-                        <span className="text-blue-400 font-black text-sm md:text-base uppercase tracking-[0.3em] drop-shadow-xl bg-stone-900 px-6 py-3 rounded-full border border-blue-500/50 shadow-[0_10px_30px_rgba(59,130,246,0.5)] backdrop-blur-sm pointer-events-auto cursor-pointer hover:bg-stone-800 transition-colors"
+                        <span className={`${playfair.className} text-blue-400 font-bold text-sm md:text-base tracking-[0.2em] drop-shadow-xl bg-stone-900 px-6 py-3 rounded-full border border-blue-500/50 shadow-[0_10px_30px_rgba(59,130,246,0.5)] backdrop-blur-sm pointer-events-auto cursor-pointer hover:bg-stone-800 transition-colors`}
                               onClick={(e) => {
                                   e.preventDefault();
                                   document.getElementById("sivumaakarit-bridge")?.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -45,25 +46,25 @@ export function Contact() {
                             <div className="absolute inset-0 bg-black translate-x-2 translate-y-2 md:translate-x-4 md:translate-y-4"></div>
                             
                             <div className="relative bg-yellow-400 text-black p-8 md:p-16 border-4 border-black shadow-2xl">
-                                <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-black text-yellow-400 px-8 py-3 font-black text-lg md:text-xl tracking-[0.3em] uppercase shadow-xl rotate-2 ring-4 ring-yellow-400">
+                                <div className={`${playfair.className} absolute -top-6 left-1/2 transform -translate-x-1/2 bg-black text-yellow-400 px-8 py-3 font-bold text-lg md:text-xl tracking-[0.2em] shadow-xl rotate-2 ring-4 ring-yellow-400`}>
                                     Varoitus
                                 </div>
                                 
-                                <h2 className="text-4xl md:text-6xl lg:text-7xl font-black mb-8 uppercase tracking-tighter leading-none mt-6">
-                                    STOP! <br /> OLET KUMMITUSSIVUILLA <br />
-                                    <span className="text-xl md:text-3xl font-bold normal-case block mt-6 opacity-90">
-                                        – tätä yritystä, <span className="underline decoration-4 decoration-black/20 text-black/80">{siteConfig.name}</span>, ei ole olemassa. 👻
+                                <h2 className={`${playfair.className} text-[10vw] sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-8 tracking-tighter leading-none mt-6 break-words hyphens-auto uppercase italic`}>
+                                    STOP! <br /> OLET <br className="sm:hidden" /> KUMMITUS&shy;SIVUILLA <br className="hidden sm:block" />
+                                    <span className={`${inter.className} text-xl md:text-3xl font-light block mt-6 opacity-90 normal-case not-italic`}>
+                                        – tätä yritystä, <span className="underline decoration-4 decoration-black/20 text-black/80 font-bold">{siteConfig.name}</span>, ei ole olemassa. 👻
                                     </span>
                                 </h2>
                                 
                                 <div className="max-w-3xl mx-auto">
-                                    <p className="text-xl md:text-2xl font-bold mb-10 leading-relaxed">
+                                    <p className={`${inter.className} text-xl md:text-2xl font-bold mb-10 leading-relaxed`}>
                                         Pahoittelut, jos ehdit jo innostua – meiltä ei saa lumitöitä, vaan pelkkää koodia. <br className="hidden md:block" />
-                                        Mutta huomasitko? <span className="bg-black text-yellow-400 px-3 py-1 rotate-1 inline-block mt-2">Melkein jo tilasit palvelun.*</span>
+                                        Mutta huomasitko? <span className="bg-black text-yellow-400 px-3 py-1 rotate-1 inline-block mt-2 font-bold">Melkein jo tilasit palvelun.*</span>
                                     </p>
                                     
                                     <div className="bg-white/30 backdrop-blur-sm p-8 md:p-10 border-l-[12px] border-black text-left shadow-inner">
-                                        <p className="text-lg md:text-xl italic font-semibold text-black/80">
+                                        <p className={`${inter.className} text-lg md:text-xl italic font-medium text-black/80`}>
                                             Se on kiistaton todiste siitä, että Sivumaakareiden Tehorunko-nettisivu toimii. 
                                             Me emme korjaa mökkejä, me korjaamme yrityksesi digitaalisen mökkitien.
                                         </p>
@@ -88,7 +89,7 @@ export function Contact() {
                                     height={80}
                                     className="h-20 md:h-28 w-auto object-contain drop-shadow-sm"
                                 />
-                                <h3 className="text-slate-900 font-extrabold tracking-[0.4em] uppercase text-sm md:text-base flex items-center justify-center gap-6 font-sans">
+                                <h3 className={`${playfair.className} text-slate-800 font-bold tracking-[0.3em] uppercase text-sm md:text-base flex items-center justify-center gap-6`}>
                                     <span className="w-16 h-px bg-slate-200 hidden md:block"></span>
                                     Kotisivujen varmistettu suorituskyky
                                     <span className="w-16 h-px bg-slate-200 hidden md:block"></span>
@@ -137,9 +138,9 @@ export function Contact() {
                                         <svg className="w-20 h-20 text-amber-500 absolute top-4 left-4 transform -rotate-90 drop-shadow-[0_4px_12px_rgba(245,158,11,0.3)]" viewBox="0 0 36 36">
                                             <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" strokeWidth="3" strokeDasharray="100, 100" />
                                         </svg>
-                                        <span className="absolute text-4xl font-black text-slate-900 tracking-tighter font-sans">100</span>
+                                        <span className={`${playfair.className} absolute text-4xl font-black text-slate-900 tracking-tighter italic`}>100</span>
                                     </div>
-                                    <span className="text-slate-800 font-black text-sm md:text-base uppercase tracking-widest group-hover:text-amber-600 transition-colors">Yhteensopivuus</span>
+                                    <span className={`${inter.className} text-slate-800 font-bold text-sm md:text-base uppercase tracking-widest group-hover:text-amber-600 transition-colors`}>Yhteensopivuus</span>
                                 </div>
 
                                 {/* Metric 3: Laatu */}
@@ -177,11 +178,11 @@ export function Contact() {
                     <div className="bg-white text-slate-900 rounded-[3rem] p-10 md:p-16 text-center max-w-4xl mx-auto shadow-2xl relative overflow-hidden ring-1 ring-slate-900/5 mb-16">
                         <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-600 to-cyan-400"></div>
                         
-                        <h3 className="text-3xl md:text-5xl lg:text-5xl font-black leading-tight mb-8 tracking-tight font-serif text-slate-900">
+                        <h3 className={`${playfair.className} text-3xl md:text-5xl lg:text-5xl font-bold leading-tight mb-8 tracking-tight text-slate-900 italic`}>
                             Me haluamme, että sinun kova työsi ja ammattitaitosi <span className="text-blue-600">löytyvät juuri sillä sekunnilla</span>, kun joku tarvitsee apuasi.
                         </h3>
                         
-                        <p className="text-xl md:text-2xl text-slate-600 leading-relaxed font-light mb-12">
+                        <p className={`${inter.className} text-lg md:text-2xl text-slate-600 leading-relaxed font-light mb-12`}>
                             Nettisivu ei ole menoerä. Se on paras työntekijäsi, joka ei nuku koskaan.
                             Kertamaksulla <strong className="font-bold text-slate-900">990 €</strong> ilman piilokuluja.
                         </p>
@@ -190,7 +191,7 @@ export function Contact() {
                             <a href="#sales-section" onClick={(e) => {
                                 e.preventDefault();
                                 document.getElementById('sales-section')?.scrollIntoView({ behavior: 'smooth' });
-                            }} className="w-full md:w-auto inline-flex items-center justify-center gap-3 bg-blue-600 text-white font-black text-xl md:text-2xl uppercase tracking-tighter py-6 px-10 rounded-2xl hover:bg-blue-700 transition-all shadow-[0_20px_40px_rgba(37,99,235,0.3)] hover:shadow-none hover:translate-y-1 transform active:scale-95 group font-sans">
+                            }} className={`${playfair.className} w-full md:w-auto inline-flex items-center justify-center gap-3 bg-blue-600 text-white font-bold text-xl md:text-2xl tracking-tight py-6 px-10 rounded-2xl hover:bg-blue-700 transition-all shadow-[0_20px_40px_rgba(37,99,235,0.3)] hover:shadow-none hover:translate-y-1 transform active:scale-95 group italic`}>
                                 LOPETA DEMOTTELU  –  LUE LISÄÄ
                                 <svg className="w-8 h-8 transform group-hover:translate-y-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M19 14l-7 7m0 0l-7-7m7 7V3" />

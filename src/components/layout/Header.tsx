@@ -5,6 +5,10 @@ import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
 import { usePathname } from "next/navigation";
 import { CabinLogo } from "@/components/landing/CabinLogo";
+import { Manrope, Urbanist } from "next/font/google";
+
+const manrope = Manrope({ subsets: ["latin"], weight: ["400", "700"] });
+const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700", "900"] });
 
 export function Header() {
     const [isOpen, setIsOpen] = useState(false);
@@ -48,12 +52,17 @@ export function Header() {
                 <div className="container mx-auto px-4">
                     <div className="flex justify-between items-center h-16">
                         {/* Logo */}
-                        <Link href="/" className="flex-1 min-w-0 flex items-center gap-2 md:gap-3 mr-2">
-                            <div className="flex-shrink-0">
+                        <Link href="/" className="flex-1 min-w-0 flex items-center gap-2 md:gap-4 mr-2">
+                            <div className="flex-shrink-0 scale-90 md:scale-100">
                                 <CabinLogo />
                             </div>
-                            <div className="font-bold text-[13px] sm:text-sm md:text-xl text-white tracking-tight leading-tight whitespace-normal line-clamp-2 md:line-clamp-none">
-                                <span>Etelä-Suomen mökkihuolto & vahti</span>
+                            <div className="flex flex-col text-left">
+                                <span className={`${urbanist.className} text-xl sm:text-2xl md:text-3xl text-white leading-none font-bold tracking-tight`}>
+                                    Etelä-Suomen
+                                </span>
+                                <span className={`${manrope.className} text-[10px] sm:text-[11px] md:text-xs text-stone-200 tracking-widest font-medium`}>
+                                    Mökkihuolto & Vahti
+                                </span>
                             </div>
                         </Link>
 
@@ -72,7 +81,7 @@ export function Header() {
                                 href="/tarjous"
                                 className="bg-white hover:bg-green-50 text-green-900 px-6 py-2 rounded-lg font-bold transition-colors shadow-sm"
                             >
-                                Pyydä tarjous
+                                Osta nyt 990 €
                             </Link>
                         </nav>
 
@@ -113,7 +122,7 @@ export function Header() {
                             onClick={() => setIsOpen(false)}
                             className="mt-4 w-full bg-white hover:bg-green-50 text-green-900 py-3.5 rounded-xl font-bold text-center shadow-sm"
                         >
-                            Pyydä tarjous
+                            Osta nyt 990 €
                         </Link>
                     </div>
                 )}
@@ -128,7 +137,7 @@ export function Header() {
                     <div className="flex justify-between items-center h-16">
                         {/* Logo - Dark Theme */}
                         <Link href="/" className="min-w-0 flex items-center gap-3 mr-4 group">
-                            <div className="font-black text-lg md:text-xl text-white tracking-widest uppercase line-clamp-1 group-hover:text-cyan-400 transition-colors">
+                            <div className={`${urbanist.className} font-bold text-xl md:text-2xl text-white tracking-widest uppercase line-clamp-1 group-hover:text-cyan-400 transition-colors opacity-90`}>
                                 Sivumaakarit
                             </div>
                         </Link>
@@ -148,7 +157,7 @@ export function Header() {
                                 href="#tarjous"
                                 className="bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 text-white px-8 py-3 rounded-full font-bold transition-all shadow-lg hover:shadow-cyan-500/25 hover:scale-105"
                             >
-                                Pyydä tarjous
+                                Osta nyt 990 €
                             </Link>
                         </div>
 
@@ -187,7 +196,7 @@ export function Header() {
                             onClick={() => setIsOpen(false)}
                             className="w-full bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 text-white py-3.5 rounded-xl font-bold text-center shadow-lg block"
                         >
-                            Pyydä tarjous
+                            Osta nyt 990 €
                         </Link>
                     </div>
                 )}

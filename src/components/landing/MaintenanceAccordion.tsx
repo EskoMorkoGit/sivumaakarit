@@ -3,6 +3,10 @@
 
 import { useState } from "react";
 import { ChevronDown, ChevronUp, CheckCircle, Clock, Shield, Activity, Headphones, FileText } from "lucide-react";
+import { Urbanist, Manrope } from "next/font/google";
+
+const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700", "800"] });
+const manrope = Manrope({ subsets: ["latin"], weight: ["300", "400", "700"] });
 
 type AccordionItemProps = {
     title: string;
@@ -25,14 +29,14 @@ function AccordionItem({ title, price, description, children, isOpen, onClick, h
                 className="w-full flex flex-col sm:flex-row sm:items-center justify-between p-5 text-left gap-4"
             >
                 <div className="flex-1">
-                    <h3 className={`font-bold text-lg mb-1 flex items-center gap-2 ${highlight ? "text-white" : "text-slate-900"}`}>
+                    <h3 className={`${urbanist.className} font-bold text-lg mb-1 flex items-center gap-2 ${highlight ? "text-white" : "text-slate-900"}`}>
                         {title}
-                        {highlight && <span className="text-xs bg-cyan-900 text-cyan-300 px-2 py-0.5 rounded-full border border-cyan-800">Suositus</span>}
+                        {highlight && <span className="text-[10px] bg-cyan-900 text-cyan-300 px-2 py-0.5 rounded-full border border-cyan-800 uppercase tracking-wider font-bold">Suositus</span>}
                     </h3>
-                    <p className={`text-sm ${highlight ? "text-slate-400" : "text-slate-500"}`}>{description}</p>
+                    <p className={`${manrope.className} text-sm ${highlight ? "text-slate-400" : "text-slate-500"} font-light`}>{description}</p>
                 </div>
                 <div className="flex items-center gap-4">
-                    <div className={`font-bold text-xl whitespace-nowrap ${highlight ? "text-cyan-400" : "text-blue-700"}`}>
+                    <div className={`${urbanist.className} font-bold text-xl whitespace-nowrap ${highlight ? "text-cyan-400" : "text-blue-700"}`}>
                         {price}
                     </div>
                     {isOpen ? (
@@ -59,7 +63,7 @@ function AccordionItem({ title, price, description, children, isOpen, onClick, h
             {!isOpen && (
                 <div
                     onClick={onClick}
-                    className={`px-5 py-2 text-xs font-medium uppercase tracking-wider text-center cursor-pointer border-t transition-colors ${highlight
+                    className={`${urbanist.className} px-5 py-2.5 text-[10px] font-bold uppercase tracking-widest text-center cursor-pointer border-t transition-colors ${highlight
                         ? "bg-slate-800 border-slate-800 text-cyan-400 hover:bg-slate-700"
                         : "bg-slate-50 border-slate-100 text-blue-600 hover:bg-blue-50"
                         }`}
@@ -94,8 +98,8 @@ export function MaintenanceAccordion() {
                             <Shield className="w-5 h-5 text-blue-700" />
                         </div>
                         <div>
-                            <h4 className="font-bold text-slate-900 text-sm mb-1">Tekninen sydän</h4>
-                            <p className="text-sm text-slate-600">Sisältää SSL-sertifikaatin, tietoturvapäivitykset, automaattiset varmuuskopiot (GitHub-versiointi) ja nopeuden jatkuvan seurannan.</p>
+                            <h4 className={`${urbanist.className} font-bold text-slate-900 text-sm mb-1 uppercase tracking-tight`}>Tekninen sydän</h4>
+                            <p className={`${manrope.className} text-sm text-slate-600 font-light`}>Sisältää SSL-sertifikaatin, tietoturvapäivitykset, automaattiset varmuuskopiot (GitHub-versiointi) ja nopeuden jatkuvan seurannan.</p>
                         </div>
                     </div>
 
@@ -104,8 +108,8 @@ export function MaintenanceAccordion() {
                             <Clock className="w-5 h-5 text-green-700" />
                         </div>
                         <div>
-                            <h4 className="font-bold text-slate-900 text-sm mb-1">1 pieni päivitys/kk</h4>
-                            <p className="text-sm text-slate-600">Voit lähettää meille kerran kuussa pienen muutoksen (esim. uusi kuva galleriaan, yhteystiedon päivitys tai lyhyt uutisteksti). Max 15min työ.</p>
+                            <h4 className={`${urbanist.className} font-bold text-slate-900 text-sm mb-1 uppercase tracking-tight`}>1 pieni päivitys/kk</h4>
+                            <p className={`${manrope.className} text-sm text-slate-600 font-light`}>Voit lähettää meille kerran kuussa pienen muutoksen (esim. uusi kuva galleriaan, yhteystiedon päivitys tai lyhyt uutisteksti). Max 15min työ.</p>
                         </div>
                     </div>
 
@@ -114,8 +118,8 @@ export function MaintenanceAccordion() {
                             <Activity className="w-5 h-5 text-slate-700" />
                         </div>
                         <div>
-                            <h4 className="font-bold text-slate-900 text-sm mb-1">Vasteaika</h4>
-                            <p className="text-sm text-slate-600">Vastaamme tukipyyntöihin 48 tunnin sisällä (arkisin).</p>
+                            <h4 className={`${urbanist.className} font-bold text-slate-900 text-sm mb-1 uppercase tracking-tight`}>Vasteaika</h4>
+                            <p className={`${manrope.className} text-sm text-slate-600 font-light`}>Vastaamme tukipyyntöihin 48 tunnin sisällä (arkisin).</p>
                         </div>
                     </div>
                 </div>
@@ -176,8 +180,8 @@ export function MaintenanceAccordion() {
                             <Headphones className="w-5 h-5 text-green-400" />
                         </div>
                         <div>
-                            <h4 className="font-bold text-white text-sm mb-1">Vasteaika</h4>
-                            <p className="text-sm text-slate-400">Priorisoitu tuki – vastaamme ja reagoimme 24 tunnin sisällä (arkisin).</p>
+                            <h4 className={`${urbanist.className} font-bold text-white text-sm mb-1 uppercase tracking-tight`}>Vasteaika</h4>
+                            <p className={`${manrope.className} text-sm text-slate-400 font-light`}>Priorisoitu tuki – vastaamme ja reagoimme 24 tunnin sisällä (arkisin).</p>
                         </div>
                     </div>
                 </div>
