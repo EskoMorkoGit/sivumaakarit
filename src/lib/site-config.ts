@@ -6,8 +6,8 @@ export const siteConfig = {
 
     // Yhteystiedot (NAP - Name, Address, Phone)
     contact: {
-        phone: "045 123 4567",
-        email: "info@mokkihuolto.fi",
+        phone: "+358 50 540 3661",
+        email: "esko@sivumaakarit.fi",
         address: "Etelä-Suomi",
         openingHours: "Ma-Pe 09-17",
         googleMapsEmbedUrl: ""
