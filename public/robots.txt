@@ -1,14 +1,41 @@
+# --- AI SEARCH & CITATION BOTS (Allow for visibility) ---
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: claude-web
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+User-agent: BingBot
+Allow: /
+
+# --- GOOGLE BOTS ---
+User-agent: Googlebot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+
+# --- CHATGPT USER BROWSING ---
+User-agent: ChatGPT-User
+User-agent: ChatGPT-User/2.0
+Allow: /
+
+# --- TRAINING BOT DISALLOWS (Protect resources, opt-out of training) ---
+User-agent: GPTBot
+Disallow: /
+User-agent: anthropic-ai
+Disallow: /
+User-agent: CCBot
+Disallow: /
+User-agent: Meta-ExternalAgent
+Disallow: /
+
+# --- DEFAULT CRAWLERS ---
 User-agent: *
 Allow: /
 Allow: /*
-
-User-agent: GPTBot
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: anthropic-ai
-Allow: /
 
 Sitemap: https://sivumaakarit.fi/sitemap.xml

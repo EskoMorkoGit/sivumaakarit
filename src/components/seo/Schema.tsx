@@ -6,7 +6,7 @@ export function Schema() {
         "@graph": [
             {
                 "@type": "LocalBusiness",
-                "@id": `${siteConfig.url}/#localbusiness`,
+                "@id": `${siteConfig.url}/#business`,
                 "name": siteConfig.name,
                 "description": siteConfig.description,
                 "url": siteConfig.url,
@@ -14,29 +14,23 @@ export function Schema() {
                 "email": siteConfig.contact.email,
                 "address": {
                     "@type": "PostalAddress",
-                    "streetAddress": siteConfig.contact.address, // Ideally split street/city/zip
-                    "addressLocality": "Etelä-Suomi", // Placeholder based on content
+                    "addressLocality": "Lohja",
+                    "addressRegion": "Uusimaa",
                     "addressCountry": "FI"
                 },
                 "geo": {
                     "@type": "GeoCoordinates",
-                    "latitude": "60.0", // Placeholder
-                    "longitude": "24.0" // Placeholder
+                    "latitude": "60.248",
+                    "longitude": "24.066"
                 },
+                "image": `${siteConfig.url}/images/tarjous-hero.webp`, 
+                "priceRange": "€€",
                 "openingHoursSpecification": {
                     "@type": "OpeningHoursSpecification",
-                    "dayOfWeek": [
-                        "Monday",
-                        "Tuesday",
-                        "Wednesday",
-                        "Thursday",
-                        "Friday"
-                    ],
+                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
                     "opens": "09:00",
                     "closes": "17:00"
-                },
-                "image": `${siteConfig.url}/og-image.jpg`, // Placeholder
-                "priceRange": "€€"
+                }
             },
             {
                 "@type": "FAQPage",
@@ -44,19 +38,52 @@ export function Schema() {
                 "mainEntity": [
                     {
                         "@type": "Question",
-                        "name": "Miten varmistatte mökin turvallisuuden talvella?",
+                        "name": "Mistä 990 euron hinta koostuu ja miten voitte myydä tähän hintaan?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Suoritamme säännölliset tarkastuskäynnit ja raportoimme havainnoista välittömästi. Talvivahti-palvelumme kattaa myös lumikuorman tarkkailun."
+                            "text": "Käytämme tekoälyä asiantuntevasti apuna koodauksessa ja tekstintuotannossa. Tekoäly ei tee sivuja puolestamme, mutta se poistaa rutiinityön, jolloin voimme keskittyä tuomaan sinulle rahaa hakukonenäkyvyydellä ja myyvällä asettelulla."
                         }
                     },
                     {
                         "@type": "Question",
-                        "name": "Mitä teen jos mökillä on putkirikko?",
+                        "name": "Miksi maksaisin 150 €/kk ylläpidosta?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Ota meihin yhteyttä heti. Talvivahti-asiakkaana havaitsemme vuodot nopeasti ja järjestämme tarvittavat korjaustoimenpiteet yhteistyökumppaneidemme kautta."
+                            "text": "150 €/kk on VIP-huoltosopimus: me pesemme auton, katsomme moottoriin ja huolehdimme, että oikeat asiakkaat nousevat kyytiin. Se on sijoitus siihen, että sivusi tuo jatkuvasti uutta kauppaa."
                         }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Miten voitte tarjota näin nopeat, 7 päivän toimitukset?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Keskitymme olennaiseen: selkeyteen, toimivuuteen ja löydettävyyteen. Emme rakenna raskaita himmeleitä, vaan työskentelemme tehokkaasti ja viivyttelemättä heti kun toimitat meille materiaalisi."
+                        }
+                    }
+                ]
+            },
+            {
+                "@type": "ItemList",
+                "@id": `${siteConfig.url}/#services`,
+                "name": "Sivumaakareiden Palvelusivut",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Moderni laskeutumissivu",
+                        "description": "Premium-tason myyntisivu, joka on suunniteltu muuttamaan kävijät asiakkaiksi."
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Google Lighthouse 100/100",
+                        "description": "Täydelliset tekniset pisteet nopeudesta ja löydettävyydestä."
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Toimitus 7 päivässä",
+                        "description": "Sivustot ovat valmiina viikossa materiaalin toimittamisen jälkeen."
                     }
                 ]
             }

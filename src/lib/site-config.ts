@@ -2,7 +2,7 @@ export const siteConfig = {
     name: "Sivumaakarit",
     slogan: "Uskottava palvelusivu yrittäjälle – Valmiina 7 päivässä",
     description: "Me rakennamme sinulle sivut, joilla asiakkaat löytävät sinut Googlesta ja tekoälyhauista.",
-    url: "https://sivumaakarit.vercel.app",
+    url: "https://sivumaakarit.fi",
 
     // Yhteystiedot (NAP - Name, Address, Phone)
     contact: {
