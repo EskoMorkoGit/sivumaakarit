@@ -32,6 +32,7 @@ export const siteConfig = {
     keywords: ["Sivumaakarit", "Kodikotkot", "LVI-verkkosivut", "Yrittäjän kotisivut", "Huippunopeat kotisivut", "Sivustot 7 päivässä"],
 
     // Lomake-integraatio
+    formspreeKey: "mvzvbrby",
     web3formsKey: "YOUR_WEB3FORMS_KEY_HERE",
 
     // Niche-kohtaiset palvelut

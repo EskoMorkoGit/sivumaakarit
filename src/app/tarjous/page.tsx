@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Playfair_Display, Inter } from "next/font/google";
 import Link from "next/link";
 import Image from "next/image";
+import { siteConfig } from "@/lib/site-config";
 import { StandalonePricing } from "@/components/landing/StandalonePricing";
 import { PricingTiers } from "@/components/landing/PricingTiers";
 
@@ -13,10 +14,29 @@ const inter = Inter({ subsets: ["latin"] });
 export default function TarjousPage() {
     const [formSubmitted, setFormSubmitted] = useState(false);
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        // Here you would typically send the data
-        setFormSubmitted(true);
+        const form = e.currentTarget;
+        const formData = new FormData(form);
+
+        try {
+            const response = await fetch(`https://formspree.io/f/${siteConfig.formspreeKey}`, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                setFormSubmitted(true);
+                form.reset();
+            } else {
+                alert("Hups! Jotain meni pieleen. Yritä uudelleen myöhemmin.");
+            }
+        } catch (error) {
+            alert("Hups! Jotain meni pieleen. Yritä uudelleen myöhemmin.");
+        }
     };
 
     return (
@@ -335,17 +355,16 @@ export default function TarjousPage() {
                                     <form className="space-y-6" onSubmit={handleSubmit}>
                                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                             <div className="space-y-2">
-                                                <label className="block text-sm font-bold text-slate-700 ml-1">Nimi</label>
-                                                <input type="text" className="w-full min-w-0 p-4 rounded-xl bg-slate-50 border border-slate-200 focus:bg-white focus:ring-4 focus:ring-blue-100 focus:border-blue-500 outline-none transition-all placeholder:text-slate-400" placeholder="Matti Meikäläinen" required />
+                                                <input type="text" name="name" className="w-full min-w-0 p-4 rounded-xl bg-slate-50 border border-slate-200 focus:bg-white focus:ring-4 focus:ring-blue-100 focus:border-blue-500 outline-none transition-all placeholder:text-slate-400" placeholder="Matti Meikäläinen" required />
                                             </div>
                                             <div className="space-y-2">
                                                 <label className="block text-sm font-bold text-slate-700 ml-1">Sähköposti</label>
-                                                <input type="email" className="w-full min-w-0 p-4 rounded-xl bg-slate-50 border border-slate-200 focus:bg-white focus:ring-4 focus:ring-blue-100 focus:border-blue-500 outline-none transition-all placeholder:text-slate-400" placeholder="matti@yritys.fi" required />
+                                                <input type="email" name="email" className="w-full min-w-0 p-4 rounded-xl bg-slate-50 border border-slate-200 focus:bg-white focus:ring-4 focus:ring-blue-100 focus:border-blue-500 outline-none transition-all placeholder:text-slate-400" placeholder="matti@yritys.fi" required />
                                             </div>
                                         </div>
                                         <div className="space-y-2">
                                             <label className="block text-sm font-bold text-slate-700 ml-1">Viesti / Yrityksesi ala</label>
-                                            <textarea className="w-full min-w-0 p-4 rounded-xl bg-slate-50 border border-slate-200 focus:bg-white focus:ring-4 focus:ring-blue-100 focus:border-blue-500 outline-none transition-all h-32 placeholder:text-slate-400" placeholder="Kerro lyhyesti mitä teet..."></textarea>
+                                            <textarea name="message" className="w-full min-w-0 p-4 rounded-xl bg-slate-50 border border-slate-200 focus:bg-white focus:ring-4 focus:ring-blue-100 focus:border-blue-500 outline-none transition-all h-32 placeholder:text-slate-400" placeholder="Kerro lyhyesti mitä teet..."></textarea>
                                         </div>
                                         <button type="submit" className={`${playfair.className} w-full bg-blue-700 text-white font-bold py-5 rounded-2xl hover:bg-blue-800 transition-all shadow-[0_15px_30px_rgba(29,78,216,0.3)] hover:shadow-none hover:translate-y-0.5 transform active:scale-95 text-xl tracking-tight`}>
                                             Lähetä tilauspyyntö
