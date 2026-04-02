@@ -7,7 +7,7 @@ export const siteConfig = {
     // Yhteystiedot (NAP - Name, Address, Phone)
     contact: {
         phone: "+358 50 540 3661",
-        email: "esko@sivumaakarit.fi",
+        email: "info@sivumaakarit.fi",
         address: "Etelä-Suomi",
         openingHours: "Ma-Pe 09-17",
         googleMapsEmbedUrl: ""
