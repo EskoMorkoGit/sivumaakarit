@@ -1,8 +1,8 @@
 export const siteConfig = {
-    name: "Etelä-Suomen Mökkihuolto & Vahti",
-    slogan: "Mielenrauhaa mökkilomalle Etelä-Suomessa",
-    description: "Ammattitaitoinen mökkitalkkari huolehtii kiinteistöstäsi, kun olet poissa. Nauti vapaa-ajasta – me hoidamme loput.",
-    url: "https://etela-suomen-mokkihuolto.vercel.app",
+    name: "Sivumaakarit",
+    slogan: "Uskottava palvelusivu yrittäjälle – Valmiina 7 päivässä",
+    description: "Me rakennamme sinulle sivut, joilla asiakkaat löytävät sinut Googlesta ja tekoälyhauista.",
+    url: "https://sivumaakarit.vercel.app",
 
     // Yhteystiedot (NAP - Name, Address, Phone)
     contact: {
@@ -29,7 +29,7 @@ export const siteConfig = {
     ],
 
     // SEO & AIO
-    keywords: ["Mökkitalkkari", "Lomavahti", "Kausihuolto", "Etelä-Suomi", "Mökin huolto", "LVI-tarkastus"],
+    keywords: ["Sivumaakarit", "Kodikotkot", "LVI-verkkosivut", "Yrittäjän kotisivut", "Huippunopeat kotisivut", "Sivustot 7 päivässä"],
 
     // Lomake-integraatio
     web3formsKey: "YOUR_WEB3FORMS_KEY_HERE",
