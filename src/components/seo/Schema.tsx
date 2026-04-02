@@ -5,6 +5,31 @@ export function Schema() {
         "@context": "https://schema.org",
         "@graph": [
             {
+                "@type": "Organization",
+                "@id": `${siteConfig.url}/#organization`,
+                "name": siteConfig.name,
+                "url": siteConfig.url,
+                "logo": {
+                    "@type": "ImageObject",
+                    "@id": `${siteConfig.url}/#logo`,
+                    "url": `${siteConfig.url}/icon.webp`, // Using the high-res icon I just set
+                    "contentUrl": `${siteConfig.url}/icon.webp`,
+                    "width": "1024",
+                    "height": "1024",
+                    "caption": siteConfig.name
+                },
+                "image": { "@id": `${siteConfig.url}/#logo` },
+                "description": siteConfig.description,
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "telephone": siteConfig.contact.phone,
+                    "contactType": "customer service",
+                    "email": siteConfig.contact.email,
+                    "areaServed": "FI",
+                    "availableLanguage": "Finnish"
+                }
+            },
+            {
                 "@type": "LocalBusiness",
                 "@id": `${siteConfig.url}/#business`,
                 "name": siteConfig.name,
