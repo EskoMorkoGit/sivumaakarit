@@ -12,13 +12,13 @@ export function Schema() {
                 "logo": {
                     "@type": "ImageObject",
                     "@id": `${siteConfig.url}/#logo`,
-                    "url": `${siteConfig.url}/icon.webp`, // Using the high-res icon I just set
+                    "url": `${siteConfig.url}/icon.webp`,
                     "contentUrl": `${siteConfig.url}/icon.webp`,
                     "width": "1024",
                     "height": "1024",
                     "caption": siteConfig.name
                 },
-                "image": { "@id": `${siteConfig.url}/#logo` },
+                "image": `${siteConfig.url}/icon.webp`,
                 "description": siteConfig.description,
                 "contactPoint": {
                     "@type": "ContactPoint",
@@ -60,6 +60,8 @@ export function Schema() {
             {
                 "@type": "FAQPage",
                 "@id": `${siteConfig.url}/#faq`,
+                "name": `Usein kysytyt kysymykset | ${siteConfig.name}`,
+                "publisher": { "@id": `${siteConfig.url}/#organization` },
                 "mainEntity": [
                     {
                         "@type": "Question",
