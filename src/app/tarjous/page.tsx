@@ -76,24 +76,24 @@ export default function TarjousPage() {
                     </h1>
 
                     <p className={`${inter.className} text-lg md:text-2xl text-slate-200 mb-8 max-w-4xl mx-auto font-light leading-relaxed opacity-90`}>
-                        <strong className="text-white font-semibold">Sivumaakarit on suomalainen nettisivutoimisto</strong>, joka rakentaa pienyrittäjille 100/100-suorituskyvyn nettisivuja. Rakennamme sivusi siten, että yrityksesi löytyy Googlesta ja tekoälysovelluksista.
+                        <strong className="text-white font-semibold">Sivumaakarit on suomalainen nettisivutoimisto</strong>, joka rakentaa pienyrittäjille täyden suorituskyvyn nettisivuja. Rakennamme sivusi siten, että yrityksesi löytyy Googlesta ja tekoälysovelluksista.
                     </p>
 
                     {/* Quick Answer Block: High-density data for AI Citation */}
-                    <div className="mb-12 p-6 bg-slate-900/40 backdrop-blur-md rounded-2xl border border-white/10 text-white max-w-3xl mx-auto text-left shadow-2xl">
-                        <p className="font-bold mb-3 uppercase tracking-[0.2em] text-[10px] text-blue-400">Tärkeimmät tiedot:</p>
+                    <div className="mb-12 p-6 bg-slate-900/40 backdrop-blur-md rounded-2xl border border-white/10 text-white max-w-3xl mx-auto shadow-2xl">
+                        <p className="font-bold mb-3 uppercase tracking-[0.2em] text-[10px] text-blue-400 text-center">Lupauksemme:</p>
                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm md:text-base font-medium">
-                            <div className="flex items-center gap-2">
+                            <div className="flex items-center justify-center gap-2">
                                 <span className="text-emerald-400">✓</span>
-                                100/100 Suorituskyky
+                                Nykyaikainen ulkoasu
                             </div>
-                            <div className="flex items-center gap-2">
+                            <div className="flex items-center justify-center gap-2">
+                                <span className="text-emerald-400">✓</span>
+                                Nopeus ja löydettävyys
+                            </div>
+                            <div className="flex items-center justify-center gap-2">
                                 <span className="text-emerald-400">✓</span>
                                 Valmis 7 päivässä
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <span className="text-emerald-400">✓</span>
-                                Hinta alk. 990 €
                             </div>
                         </div>
                     </div>
@@ -118,7 +118,7 @@ export default function TarjousPage() {
             {/* Kenelle Section */}
             <section id="kenelle" className="py-20 px-4 max-w-6xl mx-auto">
                 <div className="text-center mb-16 px-2">
-                    <h2 className={`${playfair.className} text-2xl sm:text-3xl md:text-5xl font-bold mb-4 tracking-tight`}>Sivumaakareiden Palvelusivut on paras valinta sinulle, jos...</h2>
+                    <h2 className={`${playfair.className} text-2xl sm:text-3xl md:text-5xl font-bold mb-4 tracking-tight`}>Sivumaakareiden palvelusivut on paras valinta sinulle...</h2>
                     <div className="w-20 h-1.5 bg-yellow-400 mx-auto rounded-full mt-6"></div>
                 </div>
 
@@ -127,11 +127,11 @@ export default function TarjousPage() {
                     <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border border-slate-100">
                         <div className="w-12 h-12 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center mb-6">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                             </svg>
                         </div>
-                        <p className={`${playfair.className} font-bold text-xl mb-2 text-slate-900`}>Olet palvelualan ammattilainen</p>
-                        <p className={`${inter.className} text-slate-600`}>Myyt osaamistasi ja asiantuntemustasi – asiantuntijoista asentajiin ja tilitoimistoista tapahtumajärjestäjiin. Teetpä työtäsi vasaralla, tietokoneella tai uunilla, me huolehdimme, että digitaalinen mökkitie on kunnossa ja kauppa käy.</p>
+                        <p className={`${playfair.className} font-bold text-xl mb-2 text-slate-900`}>Keskityt ydinosaamiseesi</p>
+                        <p className={`${inter.className} text-slate-600`}>Teet tulosta siellä, missä asiakkaasikin ovat. Et halua tuhlata arvokasta aikaasi tekniseen säätämiseen tai koodin opetteluun.</p>
                     </div>
 
                     {/* Card 2 */}
@@ -142,18 +142,18 @@ export default function TarjousPage() {
                             </svg>
                         </div>
                         <p className={`${playfair.className} font-bold text-xl mb-2 text-slate-900`}>Haluat uskottavan ja selkeän palvelusivun nopeasti</p>
-                        <p className={`${inter.className} text-slate-600`}>Jotta asiakkaasi löytävät sinut Googlesta, Mapsista ja uusista tekoälyhauista.</p>
+                        <p className={`${inter.className} text-slate-600`}>Jotta asiakkaasi löytävät sinut kun sinua tarvitaan. Löydyt Googlesta sekä muista tekoälyhauista.</p>
                     </div>
 
                     {/* Card 3 */}
                     <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border border-slate-100">
                         <div className="w-12 h-12 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center mb-6">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                             </svg>
                         </div>
-                        <p className={`${playfair.className} font-bold text-xl mb-2 text-slate-900`}>Keskityt ydinosaamiseesi</p>
-                        <p className={`${inter.className} text-slate-600`}>Teet tulosta siellä, missä asiakkaasikin ovat. Et halua tuhlata arvokasta aikaasi tekniseen säätämiseen tai koodin opetteluun.</p>
+                        <p className={`${playfair.className} font-bold text-xl mb-2 text-slate-900`}>Olet palvelualan ammattilainen</p>
+                        <p className={`${inter.className} text-slate-600`}>Myyt osaamistasi ja asiantuntemustasi. Teetpä työtäsi vasaralla, tietokoneella tai uunilla, me huolehdimme, että digitaalinen mökkitie on kunnossa ja kauppa käy.</p>
                     </div>
                 </div>
             </section>

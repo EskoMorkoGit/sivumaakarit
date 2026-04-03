@@ -166,7 +166,7 @@ export function Contact() {
                         <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-600 to-cyan-400"></div>
                         
                         <h3 className={`${playfair.className} text-3xl md:text-5xl lg:text-5xl font-bold leading-tight mb-8 tracking-tight text-slate-900 italic`}>
-                            Me haluamme, että sinun kova työsi ja ammattitaitosi <span className="text-blue-600">löytyvät juuri sillä sekunnilla</span>, kun joku tarvitsee apuasi.
+                            Me haluamme, että sinun kova työsi ja ammattitaitosi <span className="text-blue-600">ovat asiakkaittesi saatavilla.</span>
                         </h3>
                         
                         <p className={`${inter.className} text-lg md:text-2xl text-slate-600 leading-relaxed font-light mb-12`}>

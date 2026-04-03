@@ -12,7 +12,7 @@ export function StandalonePricing() {
                 {/* Päälupaus */}
                 <div className="text-center mb-20 max-w-4xl mx-auto">
                     <h2 className={`${playfair.className} text-3xl md:text-5xl lg:text-6xl font-extrabold mb-8 text-blue-950 leading-tight break-words`}>
-                        Me haluamme, että sinun kova työsi ja ammattitaitosi <span className="text-blue-600">löytyvät juuri sillä sekunnilla</span>, kun joku tarvitsee apuasi.
+                        Me haluamme, että sinun kova työsi ja ammattitaitosi <span className="text-blue-600">ovat asiakkaittesi saatavilla.</span>
                     </h2>
                     <p className="text-xl md:text-2xl text-slate-600 leading-relaxed">
                         Nettisivu ei ole menoerä. Se on paras työntekijäsi, joka ei nuku koskaan. Kertamaksulla (990 €) ilman piilokuluja.
