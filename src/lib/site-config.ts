@@ -1,7 +1,8 @@
 export const siteConfig = {
-    name: "Sivumaakarit",
+    name: "Kotisivut yrittäjälle | Sivumaakarit",
+    brandName: "Sivumaakarit",
     slogan: "Uskottava palvelusivu yrittäjälle – Valmiina 7 päivässä",
-    description: "Me rakennamme sinulle sivut, joilla asiakkaat löytävät sinut Googlesta ja tekoälyhauista.",
+    description: "Löydy Googlesta ja tekoälystä. Kotisivut yrittäjälle 100/100-suorituskyvyllä. Valmis viikossa – ammattitaidolla.",
     url: "https://sivumaakarit.fi",
 
     // Yhteystiedot (NAP - Name, Address, Phone)

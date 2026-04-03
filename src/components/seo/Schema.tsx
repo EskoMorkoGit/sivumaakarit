@@ -7,7 +7,7 @@ export function Schema() {
             {
                 "@type": "Organization",
                 "@id": `${siteConfig.url}/#organization`,
-                "name": siteConfig.name,
+                "name": siteConfig.brandName || "Sivumaakarit",
                 "url": siteConfig.url,
                 "logo": {
                     "@type": "ImageObject",
@@ -16,7 +16,7 @@ export function Schema() {
                     "contentUrl": `${siteConfig.url}/icon.webp`,
                     "width": "1024",
                     "height": "1024",
-                    "caption": siteConfig.name
+                    "caption": siteConfig.brandName || "Sivumaakarit"
                 },
                 "image": `${siteConfig.url}/icon.webp`,
                 "description": siteConfig.description,
@@ -32,7 +32,7 @@ export function Schema() {
             {
                 "@type": "LocalBusiness",
                 "@id": `${siteConfig.url}/#business`,
-                "name": siteConfig.name,
+                "name": siteConfig.brandName || "Sivumaakarit",
                 "description": siteConfig.description,
                 "url": siteConfig.url,
                 "telephone": siteConfig.contact.phone,
