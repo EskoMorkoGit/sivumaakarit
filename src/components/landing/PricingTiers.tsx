@@ -19,7 +19,7 @@ export function PricingTiers() {
 
                 <div className="grid lg:grid-cols-3 gap-8 items-stretch max-w-6xl mx-auto">
                     {/* Tier 1: Pelkkä sivu */}
-                    <div className="bg-white rounded-3xl p-8 shadow-sm border border-slate-200 hover:shadow-xl transition-all relative flex flex-col cursor-default">
+                    <div className="bg-white rounded-3xl p-8 shadow-sm border border-slate-200 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 relative flex flex-col cursor-default">
                         <div className="mb-8">
                             <h3 className="text-xl font-bold text-slate-900 mb-2">Pelkkä sivu</h3>
                             <div className="flex items-baseline gap-2 mb-4">
@@ -52,7 +52,7 @@ export function PricingTiers() {
                     </div>
 
                     {/* Tier 2: 50 malli (Suositelluin) */}
-                    <div className="bg-slate-900 rounded-3xl p-8 shadow-xl border border-slate-700 relative flex flex-col cursor-default transform lg:-translate-y-4">
+                    <div className="bg-slate-900 rounded-3xl p-8 shadow-xl border border-slate-700 relative flex flex-col cursor-default transform lg:-translate-y-4 hover:lg:-translate-y-6 hover:shadow-cyan-500/10 transition-all duration-300">
                         <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center">
                             <span className="bg-cyan-500 text-slate-900 text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider shadow-lg">
                                 Suosituin valinta
@@ -98,7 +98,7 @@ export function PricingTiers() {
                     </div>
 
                     {/* Tier 3: 150 malli */}
-                    <div className="bg-slate-800 rounded-3xl p-8 shadow-sm border border-slate-600 relative flex flex-col cursor-default group">
+                    <div className="bg-slate-800 rounded-3xl p-8 shadow-sm border border-slate-600 relative flex flex-col cursor-default group hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
                         <div className="mb-8">
                             <h3 className="text-xl font-bold text-white mb-2">Ylläpito & Turva – Plus</h3>
                             <div className="flex items-baseline gap-2 mb-4">

@@ -132,13 +132,13 @@ export function SalesSection() {
                         <div className="group relative p-1 rounded-2xl transition-all duration-500 hover:scale-105 shadow-[0_0_15px_rgba(34,211,238,0.1)] hover:shadow-[0_0_40px_rgba(34,211,238,0.3)]">
                             <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 rounded-2xl animate-shimmer opacity-30 group-hover:opacity-100 transition-opacity duration-500" style={{ padding: '1px', backgroundSize: '200% 200%' }}></div>
                             <div className="relative bg-slate-950 p-8 rounded-2xl h-full flex flex-col items-center">
-                                <div className={`${playfair.className} w-20 h-20 rounded-full border-4 border-cyan-400 flex items-center justify-center text-cyan-400 font-bold text-3xl mb-6 shadow-[0_0_20px_rgba(34,211,238,0.6)] bg-cyan-400/5`}>
-                                    100
-                                </div>
-                                <h3 className={`${playfair.className} text-xl font-bold text-white mb-4 text-center italic`}>Hakukoneoptimointi (SEO)</h3>
-                                <p className={`${inter.className} text-slate-300 text-sm md:text-base text-center leading-relaxed font-light`}>
-                                    100/100. Varmistamme, että yrityksesi löytyy sieltä, missä asiakkaat etsivät apua – nyt ja tulevaisuuden tekoälyhauissa.
-                                </p>
+                                 <div className="w-20 h-20 rounded-full border-4 border-green-400 flex items-center justify-center text-green-400 font-black text-3xl mb-6 shadow-[0_0_20px_rgba(74,222,128,0.6)] bg-green-400/5">
+                                     100
+                                 </div>
+                                 <h3 className={`${playfair.className} text-xl font-bold text-white mb-4 text-center italic`}>Tekoäly- ja hakukonelöytyvyys</h3>
+                                 <p className={`${inter.className} text-slate-300 text-sm md:text-base text-center leading-relaxed font-light`}>
+                                     Tekninen 100/100 SEO-takuu. Varmistamme, että yrityksesi on täydellinen sekä Googlelle että tekoälysovelluksille (kuten ChatGPT ja Gemini).
+                                 </p>
                             </div>
                         </div>
 
@@ -146,13 +146,14 @@ export function SalesSection() {
                         <div className="group relative p-1 rounded-2xl transition-all duration-500 hover:scale-105 shadow-[0_0_15px_rgba(74,222,128,0.1)] hover:shadow-[0_0_40px_rgba(74,222,128,0.3)]">
                             <div className="absolute inset-0 bg-gradient-to-r from-green-500 via-emerald-500 to-teal-500 rounded-2xl animate-shimmer opacity-30 group-hover:opacity-100 transition-opacity duration-500" style={{ padding: '1px', backgroundSize: '200% 200%' }}></div>
                             <div className="relative bg-slate-950 p-8 rounded-2xl h-full flex flex-col items-center">
-                                <div className="w-20 h-20 rounded-full border-4 border-green-400 flex items-center justify-center text-green-400 font-black text-3xl mb-6 shadow-[0_0_20px_rgba(74,222,128,0.6)] animate-glitter bg-green-400/5">
-                                    100
-                                </div>
-                                <h3 className="text-xl font-bold text-white mb-4 text-center">Esteettömyys</h3>
-                                <p className="text-slate-300 text-sm md:text-base text-center leading-relaxed">
-                                    100/100. Sivusi noudattaa Googlen tiukimpia käytettävyysstandardeja ilman poikkeuksia.
-                                </p>
+                                 <div className="w-20 h-20 rounded-full border-4 border-cyan-400 flex flex-col items-center justify-center text-cyan-400 font-black mb-6 shadow-[0_0_20px_rgba(34,211,238,0.6)] animate-glitter bg-cyan-400/5">
+                                     <span className="text-[10px] uppercase tracking-tighter opacity-70">Eliitti</span>
+                                     <span className="text-xl leading-none">85-100</span>
+                                 </div>
+                                 <h3 className="text-xl font-bold text-white mb-4 text-center">Esteettömyys</h3>
+                                 <p className="text-slate-300 text-sm md:text-base text-center leading-relaxed font-light">
+                                     Lupaamme vähintään 85+ tason. Sivusi noudattaa Googlen käytettävyysstandardeja, jotta kaikki asiakkaat pääsevät perille ilman esteitä.
+                                 </p>
                             </div>
                         </div>
 
@@ -160,21 +161,22 @@ export function SalesSection() {
                         <div className="group relative p-1 rounded-2xl transition-all duration-500 hover:scale-105 shadow-[0_0_15px_rgba(192,132,252,0.1)] hover:shadow-[0_0_40px_rgba(192,132,252,0.3)]">
                             <div className="absolute inset-0 bg-gradient-to-r from-purple-500 via-pink-500 to-indigo-500 rounded-2xl animate-shimmer opacity-30 group-hover:opacity-100 transition-opacity duration-500" style={{ padding: '1px', backgroundSize: '200% 200%' }}></div>
                             <div className="relative bg-slate-950 p-8 rounded-2xl h-full flex flex-col items-center">
-                                <div className="w-20 h-20 rounded-full border-4 border-purple-400 flex items-center justify-center text-purple-400 font-black text-3xl mb-6 shadow-[0_0_20px_rgba(192,132,252,0.6)] animate-glitter bg-purple-400/5">
-                                    100
-                                </div>
-                                <h3 className="text-xl font-bold text-white mb-4 text-center">Parhaat käytännöt</h3>
-                                <p className="text-slate-300 text-sm md:text-base text-center leading-relaxed">
-                                    100/100. Sivusi noudattaa Googlen tiukimpia turvallisuusstandardeja ilman poikkeuksia.
-                                </p>
+                                 <div className="w-20 h-20 rounded-full border-4 border-purple-400 flex flex-col items-center justify-center text-purple-400 font-black mb-6 shadow-[0_0_20px_rgba(192,132,252,0.6)] animate-glitter bg-purple-400/5">
+                                     <span className="text-[10px] uppercase tracking-tighter opacity-70">Eliitti</span>
+                                     <span className="text-xl leading-none">95-100</span>
+                                 </div>
+                                 <h3 className="text-xl font-bold text-white mb-4 text-center">Parhaat käytännöt</h3>
+                                 <p className="text-slate-300 text-sm md:text-base text-center leading-relaxed font-light">
+                                     Teollisuuden kärkeä. Käytämme vain moderneinta ja turvallisinta tekniikkaa. Sivusi on aina teknisesti aikaansa edellä.
+                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    {/* 6. High-Impact Speed Section (Efficiency 95+) - Now GOOGLE GREEN */}
+                    {/* 6. High-Impact Speed Section (Elite Tier 85-100) - Revised for Transparency */}
                     <div className="bg-slate-900/50 backdrop-blur-xl border-4 border-white/5 p-8 md:p-16 rounded-[2.5rem] max-w-6xl mx-auto mb-32 relative overflow-hidden">
                         <div className="absolute top-0 right-0 p-8 opacity-10 select-none">
-                            <span className="text-9xl font-black text-emerald-500 leading-none">GOOGLE</span>
+                            <span className="text-9xl font-black text-emerald-500 leading-none">Vauhti</span>
                         </div>
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
                             <div className="flex flex-col items-center lg:items-start">
@@ -191,10 +193,10 @@ export function SalesSection() {
                                     <div className="absolute -inset-4 bg-gradient-to-r from-emerald-400 to-green-500 rounded-full blur-2xl opacity-40 group-hover:opacity-100 transition-opacity duration-700 animate-pulse"></div>
                                     <div className="relative w-36 h-36 md:w-44 md:h-44 rounded-full border-[8px] border-emerald-500 flex items-center justify-center bg-slate-950 shadow-[0_0_50px_rgba(16,185,129,0.4)] transition-transform duration-500 group-hover:rotate-6">
                                         <div className="text-center">
-                                            <div className="text-sm font-black text-emerald-400 uppercase tracking-[0.2em] mb-1">Google</div>
+                                            <div className="text-sm font-black text-emerald-400 uppercase tracking-[0.2em] mb-1">Status</div>
                                             <div className="text-xs uppercase tracking-tighter text-slate-400 font-bold mb-1">Pisteet</div>
-                                            <div className="text-xl font-black text-white uppercase tracking-widest bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">Vihreä</div>
-                                            <div className="text-[10px] uppercase tracking-[0.3em] text-emerald-500 font-bold mt-2">Tehokkuus</div>
+                                            <div className="text-xl font-black text-white uppercase tracking-widest bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">Eliitti</div>
+                                            <div className="text-[10px] uppercase tracking-[0.3em] text-emerald-500 font-bold mt-2">Toimitus</div>
                                         </div>
                                     </div>
                                 </div>
@@ -202,10 +204,10 @@ export function SalesSection() {
                             </div>
                             <div>
                                 <p className={`${inter.className} text-white text-xl md:text-2xl font-bold leading-relaxed mb-8 italic opacity-90`}>
-                                    &quot;Perinteiset kotisivut matelevat punaisella, meidän mallimus latautuu silmänräpäyksessä ja pysyy aina Googlen suosittelemalla erinomaisella tasolla.&quot;
+                                    &quot;Lupaamme teknisestä löydettävyydestä täyden kympin ja mobiilisuorituskyvyn, joka pysyy aina 85–100 pisteen eliittiluokassa.&quot;
                                 </p>
                                 <p className={`${inter.className} text-slate-300 text-lg leading-relaxed mb-6 font-light`}>
-                                    Toimitamme jokaisen sivuston mukana virallisen <span className="text-emerald-400 font-bold">Google Lighthouse -raportin*</span>, joka vahvistaa täydet 100/100 pisteet hakukoneoptimoinnista, esteettömyydestä ja parhaista käytännöistä. 
+                                    Toimitamme jokaisen sivuston mukana virallisen raportin*, joka vahvistaa täydet 100 pistettä hakukonelöytyvyydestä ja teknisestä kunnosta. Mobiilissa nopeus on optimoitu tasolle, jota useimmat pörssiyhtiöt eivät saavuta.
                                 </p>
                                 <p className={`${inter.className} text-slate-300 text-sm leading-relaxed opacity-80`}>
                                     Sivu, joka latautuu heti ja on selkeä käyttää, muuttaa kävijät maksaviksi asiakkaiksi. Älä anna hitaan tekniikan karkottaa asiakkaitasi kuoppaiselle hiekkattielle.
@@ -340,9 +342,9 @@ export function SalesSection() {
                                 <input aria-label="Sähköposti" type="email" name="email" placeholder="Sähköposti" required className="bg-slate-900/50 border border-slate-800 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-cyan-500 outline-none w-full min-w-0" />
                             </div>
                             <textarea aria-label="Viesti" name="message" rows={3} placeholder="Miten voin auttaa?" className="w-full min-w-0 bg-slate-900/50 border border-slate-800 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-cyan-500 outline-none"></textarea>
-                            <button type="submit" className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 rounded-lg transition-colors">
-                                &quot;Entä se perinteinen toimisto?&quot;
-                            </button>
+                             <button type="submit" className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 rounded-lg transition-colors">
+                                 Lähetä tarjouspyyntö
+                             </button>
                         </form>
                     </div>
 

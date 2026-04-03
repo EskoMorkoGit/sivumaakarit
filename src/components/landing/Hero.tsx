@@ -7,7 +7,7 @@ const urbanist = Urbanist({ subsets: ["latin"], weight: ["400", "700", "900"] })
 
 export function Hero() {
     return (
-        <section className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center bg-stone-900 text-white overflow-hidden">
+        <section className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center bg-stone-900 text-white overflow-hidden" id="hero">
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <Image
@@ -17,16 +17,17 @@ export function Hero() {
                     className="object-cover opacity-60"
                     priority
                     fetchPriority="high"
+                    loading="eager"
                     sizes="100vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-stone-900/40 via-stone-900/20 to-stone-900/80" />
             </div>
 
-            <div className="relative z-10 container mx-auto px-4 text-center">
-                <h1 className={`${urbanist.className} text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-8 tracking-tight drop-shadow-2xl leading-tight mt-16 md:mt-0`}>
+            <div className="relative z-10 container mx-auto px-4 text-center pt-20 md:pt-24">
+                <h1 className={`${urbanist.className} text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-8 tracking-tight drop-shadow-2xl leading-tight mt-16 md:mt-0 px-2`}>
                     Mielenrauhaa <br className="hidden md:block" /> mökkilomalle
                 </h1>
-                <p className={`${manrope.className} text-base md:text-2xl text-stone-100 mb-12 max-w-2xl mx-auto drop-shadow-md font-light tracking-wide opacity-90`}>
+                <p className={`${manrope.className} text-lg md:text-2xl text-stone-100 mb-12 max-w-2xl mx-auto drop-shadow-md font-light tracking-wide opacity-95 px-4`}>
                     Ammattitaitoinen mökkitalkkari huolehtii kiinteistöstäsi, kun olet poissa. <br className="hidden md:block" />
                     Nauti vapaa-ajasta – me hoidamme loput.
                 </p>

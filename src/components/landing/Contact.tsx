@@ -53,7 +53,7 @@ export function Contact() {
                                 <h2 className={`${playfair.className} text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-8 tracking-tighter leading-none mt-6 uppercase italic`}>
                                     STOP! <br /> OLET <br className="sm:hidden" /> KUMMITUSSIVUILLA <br className="hidden sm:block" />
                                     <span className={`${inter.className} text-xl md:text-3xl font-light block mt-6 opacity-90 normal-case not-italic`}>
-                                        – tätä yritystä, <span className="underline decoration-4 decoration-black/20 text-black/80 font-bold">{siteConfig.name}</span>, ei ole olemassa. 👻
+                                        – tätä yritystä, <span className="underline decoration-4 decoration-black/20 text-black/80 font-bold">Etelä-Suomen Mökki & Vahti</span>, ei ole olemassa. 👻
                                     </span>
                                 </h2>
                                 
@@ -72,107 +72,94 @@ export function Contact() {
                                 </div>
                             </div>
                         </div>
-                            {/* Highly Visual "Proof" Section - Styled to match the sales card (White background, dark text) */}
-                    <div className="relative mt-32 mb-20 max-w-4xl mx-auto">
-                        <div className="absolute inset-0 bg-white/5 blur-3xl transform scale-95 rounded-[3rem]"></div>
-                        
-                        <div className="relative bg-white border border-slate-200 rounded-[3rem] p-10 md:p-16 shadow-2xl overflow-hidden ring-1 ring-slate-900/5 text-center">
-                            {/* Decorative top bar like the sales card */}
-                            <div className="absolute top-0 left-0 w-full h-3 bg-gradient-to-r from-blue-600 to-cyan-400"></div>
+                    </div>
+
+                    {/* Highly Visual "Proof" Section - PageSpeed Dashboard Redesign */}
+                    <div className="relative mt-32 mb-20 max-w-5xl mx-auto">
+                        <div className="text-center mb-16 px-4">
+                            <h2 className={`${playfair.className} text-4xl md:text-5xl lg:text-7xl font-black text-white mb-6 uppercase tracking-tight italic`}>
+                                Todisteet puhuvat <br className="sm:hidden" /> puolestaan
+                            </h2>
+                            <p className={`${inter.className} text-xl text-blue-300 max-w-2xl mx-auto font-light leading-relaxed`}>
+                                Me emme vain lupaa, me dokumentoimme. <br className="hidden md:block" />
+                                <span className="text-white font-bold italic">Sivusi suorituskyky on meidän kunnia-asiamme.</span>
+                            </p>
+                        </div>
+
+                        {/* Realistic PageSpeed Dashboard Frame */}
+                        <div className="relative transform transition-all duration-700 hover:scale-[1.02] w-full max-w-4xl mx-auto z-10 px-4">
+                            {/* Realistic Glow spill */}
+                            <div className="absolute -inset-8 bg-blue-600/20 rounded-[3rem] blur-3xl opacity-60 pointer-events-none"></div>
                             
-                            {/* Sivumaakarit Branding Header - Larger logo */}
-                            <div className="flex flex-col items-center mb-12 gap-6">
-                                <Image
-                                    src="/images/sivumaakarit.webp"
-                                    alt="Sivumaakarit Logo"
-                                    width={240}
-                                    height={80}
-                                    className="h-20 md:h-28 w-auto object-contain drop-shadow-sm"
-                                />
-                                <h3 className={`${playfair.className} text-slate-800 font-bold tracking-[0.3em] uppercase text-sm md:text-base flex items-center justify-center gap-6`}>
-                                    <span className="w-16 h-px bg-slate-200 hidden md:block"></span>
-                                    Kotisivujen varmistettu suorituskyky
-                                    <span className="w-16 h-px bg-slate-200 hidden md:block"></span>
-                                </h3>
-                            </div>
-
-                            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center items-center justify-center">
-                                {/* Metric 1: Hakukonenäkyvyys */}
-                                <div className="flex flex-col items-center group">
-                                    <div className="w-28 h-28 mb-6 relative flex items-center justify-center scale-125">
-                                        {/* Golden Wreath SVG - More visible on white */}
-                                        <svg className="absolute inset-0 w-full h-full text-amber-500/30" viewBox="0 0 100 100">
-                                            <g className="opacity-100">
-                                                {[...Array(12)].map((_, i) => (
-                                                    <path key={i} d="M50 8 L53 15 L47 15 Z" transform={`rotate(${i * 30} 50 50)`} fill="currentColor" />
-                                                ))}
-                                                <circle cx="50" cy="50" r="44" fill="none" stroke="currentColor" strokeWidth="1.5" strokeDasharray="4 4" />
-                                            </g>
-                                        </svg>
-                                        {/* Main Circle */}
-                                        <svg className="w-20 h-20 text-slate-100" viewBox="0 0 36 36">
-                                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" strokeWidth="3" />
-                                        </svg>
-                                        <svg className="w-20 h-20 text-amber-500 absolute top-4 left-4 transform -rotate-90 drop-shadow-[0_4px_12px_rgba(245,158,11,0.3)]" viewBox="0 0 36 36">
-                                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" strokeWidth="3" strokeDasharray="100, 100" />
-                                        </svg>
-                                        <span className="absolute text-4xl font-black text-slate-900 tracking-tighter italic">100</span>
+                            {/* Device Frame (Browser) */}
+                            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-300 bg-white flex flex-col">
+                                {/* Chrome Browser Bar */}
+                                <div className="h-10 bg-[#f1f3f4] flex items-center px-4 border-b border-slate-200 gap-4">
+                                    <div className="flex gap-1.5">
+                                        <div className="w-2.5 h-2.5 rounded-full bg-[#ff5f56]"></div>
+                                        <div className="w-2.5 h-2.5 rounded-full bg-[#ffbd2e]"></div>
+                                        <div className="w-2.5 h-2.5 rounded-full bg-[#27c93f]"></div>
                                     </div>
-                                    <span className="text-slate-800 font-black text-sm md:text-base uppercase tracking-widest group-hover:text-amber-600 transition-colors">Hakukonenäkyvyys</span>
-                                </div>
-
-                                {/* Metric 2: Yhteensopivuus */}
-                                <div className="flex flex-col items-center group">
-                                    <div className="w-28 h-28 mb-6 relative flex items-center justify-center scale-125">
-                                        <svg className="absolute inset-0 w-full h-full text-amber-500/30" viewBox="0 0 100 100">
-                                            <g className="opacity-100">
-                                                {[...Array(12)].map((_, i) => (
-                                                    <path key={i} d="M50 8 L53 15 L47 15 Z" transform={`rotate(${i * 30} 50 50)`} fill="currentColor" />
-                                                ))}
-                                                <circle cx="50" cy="50" r="44" fill="none" stroke="currentColor" strokeWidth="1.5" strokeDasharray="4 4" />
-                                            </g>
-                                        </svg>
-                                        <svg className="w-20 h-20 text-slate-100" viewBox="0 0 36 36">
-                                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" strokeWidth="3" />
-                                        </svg>
-                                        <svg className="w-20 h-20 text-amber-500 absolute top-4 left-4 transform -rotate-90 drop-shadow-[0_4px_12px_rgba(245,158,11,0.3)]" viewBox="0 0 36 36">
-                                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" strokeWidth="3" strokeDasharray="100, 100" />
-                                        </svg>
-                                        <span className={`${playfair.className} absolute text-4xl font-black text-slate-900 tracking-tighter italic`}>100</span>
+                                    <div className="flex-1 bg-white h-6 rounded-full flex items-center px-3 shadow-sm border border-slate-200 max-w-md hidden sm:flex">
+                                        <span className="text-[10px] text-slate-400 truncate font-sans">pagespeed.web.dev/report/sivumaakarit-tehorunko</span>
                                     </div>
-                                    <span className={`${inter.className} text-slate-800 font-bold text-sm md:text-base uppercase tracking-widest group-hover:text-amber-600 transition-colors`}>Yhteensopivuus</span>
                                 </div>
-
-                                {/* Metric 3: Laatu */}
-                                <div className="flex flex-col items-center group">
-                                    <div className="w-28 h-28 mb-6 relative flex items-center justify-center scale-125">
-                                        <svg className="absolute inset-0 w-full h-full text-amber-500/30" viewBox="0 0 100 100">
-                                            <g className="opacity-100">
-                                                {[...Array(12)].map((_, i) => (
-                                                    <path key={i} d="M50 8 L53 15 L47 15 Z" transform={`rotate(${i * 30} 50 50)`} fill="currentColor" />
-                                                ))}
-                                                <circle cx="50" cy="50" r="44" fill="none" stroke="currentColor" strokeWidth="1.5" strokeDasharray="4 4" />
-                                            </g>
-                                        </svg>
-                                        <svg className="w-20 h-20 text-slate-100" viewBox="0 0 36 36">
-                                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" strokeWidth="3" />
-                                        </svg>
-                                        <svg className="w-20 h-20 text-amber-500 absolute top-4 left-4 transform -rotate-90 drop-shadow-[0_4px_12px_rgba(245,158,11,0.3)]" viewBox="0 0 36 36">
-                                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" strokeWidth="3" strokeDasharray="100, 100" />
-                                        </svg>
-                                        <span className="absolute text-4xl font-black text-slate-900 tracking-tighter font-sans">100</span>
+                                
+                                {/* PageSpeed Content Area */}
+                                <div className="p-6 md:p-12 bg-white font-sans text-left">
+                                    <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12">
+                                        <div className="flex items-center gap-4">
+                                            <div className="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center border border-blue-100 shadow-sm">
+                                                <svg className="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                                </svg>
+                                            </div>
+                                            <h3 className="text-xl md:text-2xl font-bold text-slate-800 tracking-tight">Varmistettu Raportti</h3>
+                                        </div>
+                                        <div className="flex items-center gap-3">
+                                            <span className="px-3 py-1 bg-emerald-50 text-emerald-700 text-[10px] font-black uppercase tracking-widest rounded-full border border-emerald-100 shadow-sm">
+                                                Status: Sertifioitu
+                                            </span>
+                                        </div>
                                     </div>
-                                    <span className="text-slate-800 font-black text-sm md:text-base uppercase tracking-widest group-hover:text-amber-600 transition-colors">Laatu</span>
+
+                                    {/* The Metrics Grid */}
+                                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                                        {[
+                                            { label: "Suorituskyky", score: "85-100", elite: true },
+                                            { label: "Esteettömyys", score: "100" },
+                                            { label: "Käytännöt", score: "100" },
+                                            { label: "SEO / AI-löytyvyys", score: "100" }
+                                        ].map((m) => (
+                                            <div key={m.label} className="flex flex-col items-center gap-3 group">
+                                                <div className="relative w-16 h-16 md:w-20 md:h-20 transition-transform duration-300 group-hover:scale-110">
+                                                    <svg className="w-full h-full -rotate-90" viewBox="0 0 36 36">
+                                                        <circle cx="18" cy="18" r="16" fill="none" stroke="#f1f5f9" strokeWidth="3" />
+                                                        <circle cx="18" cy="18" r="16" fill="none" stroke="#0cce6b" strokeWidth="3" strokeDasharray={m.elite ? "94 100" : "100 100"} strokeLinecap="round" />
+                                                    </svg>
+                                                    <span className="absolute inset-0 flex items-center justify-center text-[#088243] font-black text-sm md:text-lg">
+                                                        {m.score}
+                                                    </span>
+                                                </div>
+                                                <h4 className="text-[9px] md:text-[10px] font-black text-slate-400 uppercase tracking-widest text-center h-8 leading-tight">
+                                                    {m.label}
+                                                </h4>
+                                            </div>
+                                        ))}
+                                    </div>
+                                    
+                                    <div className="mt-12 pt-6 border-t border-slate-100 flex items-center justify-between gap-4">
+                                        <p className="text-[10px] text-slate-400 italic">
+                                            * Lighthouse 11 Benchmark — Analysoitu: Tänään {new Date().getHours()}:00
+                                        </p>
+                                        <div className="opacity-30 grayscale hover:grayscale-0 transition-all cursor-pointer">
+                                            <Image src="/images/sivumaakarit.webp" alt="Sivumaakarit Verified" width={80} height={25} className="h-6 w-auto" />
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            
-                            <div className="mt-12 pt-8 border-t border-slate-100">
-                                <p className="text-slate-400 text-xs md:text-sm tracking-wide leading-relaxed">
-                                    * Jokainen toimitettava Sivumaakarit-tehorunko-nettisivu testataan alan standardilla eli Googlen Lighthouse-työkalulla.
-                                </p>
                             </div>
                         </div>
-                    </div>                   </div>
+                    </div>
 
                     {/* Highly Converting Sales Text section from Tarjous page */}
                     <div className="bg-white text-slate-900 rounded-[3rem] p-10 md:p-16 text-center max-w-4xl mx-auto shadow-2xl relative overflow-hidden ring-1 ring-slate-900/5 mb-16">

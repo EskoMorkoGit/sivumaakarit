@@ -54,7 +54,7 @@ export function DemoBadge() {
             </div>
             
             <Link 
-                href="/" 
+                href="/tarjous#hinnasto" 
                 className="mt-0.5 w-full bg-cyan-600 hover:bg-cyan-500 text-white font-bold text-[9px] md:text-sm py-1.5 px-2 md:py-2 md:px-3 rounded-lg text-center transition-colors shadow-sm flex items-center justify-center gap-1"
             >
                 <span>Haluatko samanlaiset?</span>

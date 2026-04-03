@@ -4,8 +4,8 @@ import { siteConfig } from "@/lib/site-config";
 export function ContactBanner() {
     return (
         <section className="py-12 bg-white">
-            <div className="container mx-auto px-4">
-                <div className="bg-white rounded-3xl p-8 md:p-12 border border-stone-200 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 text-center md:text-left">
+            <div className="container mx-auto px-4 max-w-4xl">
+                <div className="bg-white rounded-3xl p-6 md:p-8 border border-stone-200 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col md:flex-row items-center justify-between gap-6 md:gap-10 text-center md:text-left">
                     <div className="flex items-center gap-6">
                         {/* Round Icon Container */}
                         <a href={`tel:${siteConfig.contact.phone.replace(/\s/g, '')}`} aria-label="Soita meille heti" className="flex-shrink-0 w-16 h-16 md:w-20 md:h-20 bg-green-700 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-colors">
@@ -17,7 +17,7 @@ export function ContactBanner() {
                         {/* Text Content */}
                         <div>
                             <h3 className="text-xl md:text-2xl font-bold text-stone-800">
-                                Ota yhteyttä <a href={`tel:${siteConfig.contact.phone.replace(/\s/g, '')}`} className="text-green-700 whitespace-nowrap hover:underline underline-offset-4 decoration-2 transition-all">{siteConfig.contact.phone}</a> <br className="hidden md:block" /> ja pyydä tarjous!
+                                Ota yhteyttä <a href={`tel:0451234567`} className="text-green-700 whitespace-nowrap hover:underline underline-offset-4 decoration-2 transition-all">045 1234567</a> <br className="hidden md:block" /> ja pyydä tarjous!
                             </h3>
                         </div>
                     </div>

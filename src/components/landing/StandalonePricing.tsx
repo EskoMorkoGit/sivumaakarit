@@ -34,17 +34,17 @@ export function StandalonePricing() {
                                 Todisteet puhuvat puolestaan
                             </h3>
                             <p className="text-slate-600 mb-10 text-lg md:text-xl leading-relaxed max-w-2xl">
-                                Olemme ylpeitä laadustamme. <strong className="text-emerald-600 font-semibold">Meiltä saat vihreää Googlen testissä.</strong> Jokaiselle sivulle ajetaan automatisoitu laatutarkastus. Nämä tulokset ovat parempia kuin mitkään perinteiset referenssit.
+                                Olemme ylpeitä laadustamme. <strong className="text-emerald-600 font-semibold">Takaamme teknisen täydellisyyden.</strong> Jokaiselle sivulle ajetaan automatisoitu laatutarkastus, joka varmistaa eliittiluokan tuloksen.
                             </p>
 
                             <div className="flex flex-col sm:flex-row items-center sm:items-end justify-center lg:justify-start gap-8 sm:gap-12 mb-8">
-                                {/* Prominent Green Performance Orb */}
+                                {/* Prominent Elite Performance Orb */}
                                 <div className="group relative flex flex-col items-center">
                                     <div className="relative w-36 h-36 md:w-44 md:h-44 rounded-full border-[6px] border-emerald-500 flex items-center justify-center bg-white shadow-[0_0_50px_rgba(16,185,129,0.5)] transition-transform duration-500 group-hover:scale-105 group-hover:rotate-3">
                                         <div className="absolute -inset-4 bg-gradient-to-r from-emerald-400 to-green-500 rounded-full blur-2xl opacity-40 group-hover:opacity-70 transition-opacity duration-700 animate-pulse z-0"></div>
                                         <div className="text-center z-10">
-                                            <div className="text-xs md:text-sm uppercase tracking-tighter text-slate-500 font-bold mb-1">Pisteet</div>
-                                            <div className="text-xl md:text-3xl font-black text-emerald-600 uppercase tracking-widest leading-none">Vihreä</div>
+                                            <div className="text-xs md:text-sm uppercase tracking-tighter text-slate-500 font-bold mb-1">Status</div>
+                                            <div className="text-xl md:text-3xl font-black text-emerald-600 uppercase tracking-widest leading-none">Eliitti</div>
                                         </div>
                                     </div>
                                     <span className="text-base md:text-lg font-bold text-slate-900 text-center uppercase tracking-widest mt-5 bg-emerald-50 px-4 py-1 rounded-full text-emerald-800 border border-emerald-100">Suorituskyky</span>
@@ -60,7 +60,7 @@ export function StandalonePricing() {
                             </div>
 
                             <p className="text-slate-400 text-xs italic mt-4">
-                                * Varmistus riippumattomalla Google PageSpeed Insights -työkalulla.
+                                * Suorituskykytakuu 85–100 pistettä (mobiili) – valovuosia edellä tavallisia kotisivuja.
                             </p>
                         </div>
 
@@ -175,8 +175,8 @@ export function StandalonePricing() {
                                     <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                                 </div>
                                 <div>
-                                    <strong className="text-slate-900 text-xl block mb-2">100/100 Puhtia</strong>
-                                    <p className="text-slate-600 text-sm md:text-base">Sivusi saa täydet pisteet Googlen omassa Lighthouse-testissä. Nopeus on valttia.</p>
+                                    <strong className="text-slate-900 text-xl block mb-2">Elite-suorituskyky</strong>
+                                    <p className="text-slate-600 text-sm md:text-base">Sivusi latautuu silmänräpäyksessä ja pysyy aina 85–100 pisteen eliittiluokassa.</p>
                                 </div>
                             </li>
                             <li className="flex flex-col items-center text-center gap-4 bg-slate-50 p-6 rounded-3xl border border-slate-100 hover:shadow-lg transition-shadow">
@@ -184,8 +184,8 @@ export function StandalonePricing() {
                                     <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
                                 </div>
                                 <div>
-                                    <strong className="text-slate-900 text-xl block mb-2">AIO-valmius</strong>
-                                    <p className="text-slate-600 text-sm md:text-base">Jotta asiakkaasi löytävät sinut Googlesta, Mapsista ja uusista tekoälyhauista (esim. ChatGPT).</p>
+                                    <strong className="text-slate-900 text-xl block mb-2">AI-valmius</strong>
+                                    <p className="text-slate-600 text-sm md:text-base">Jotta asiakkaasi löytävät sinut Googlesta, Mapsista ja uusista tekoälysovelluksista (esim. ChatGPT).</p>
                                 </div>
                             </li>
                             <li className="flex flex-col items-center text-center gap-4 bg-slate-50 p-6 rounded-3xl border border-slate-100 hover:shadow-lg transition-shadow">
@@ -193,8 +193,8 @@ export function StandalonePricing() {
                                     <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                                 </div>
                                 <div>
-                                    <strong className="text-slate-900 text-xl block mb-2">Löydettävyystakuu</strong>
-                                    <p className="text-slate-600 text-sm md:text-base">SEO (hakukoneoptimointi) on leivottu sisään jokaiseen koodiriviin ja tekstiin.</p>
+                                    <strong className="text-slate-900 text-xl block mb-2">Tekniikka-takuu</strong>
+                                    <p className="text-slate-600 text-sm md:text-base">Tekninen 100/100-varmistus on leivottu sisään jokaiseen koodiriviin ja tekstiin.</p>
                                 </div>
                             </li>
                         </ul>
